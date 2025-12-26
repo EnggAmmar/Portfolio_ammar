@@ -195,9 +195,9 @@ const workExperiences = {
       descBullets: ["Designed and optimized mechanical components using simulation-driven methods", "Performed thermal, pressure, and structural analysis for electromechanical systems", "Coordinated with fabrication teams for test hardware development"]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      role: "Mechanical Design Engineer",
+      company: "Aero-Vision Technologies (AVT)",
+      companylogo: require("./assets/images/avt.jpg"),
       date: "Jan 2015 – Sep 2015",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
