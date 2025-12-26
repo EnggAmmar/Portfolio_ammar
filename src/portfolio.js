@@ -20,10 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Ammar Ahmed",
+  title: "Hi all, I'm Ammar",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A Mechanical Design & Simulation Engineer 🚀 with hands-on experience in aerospace systems, rocket propulsion, UAV structures, and simulation-driven product development. Skilled in CAD, FEA, CFD, and turning complex concepts into validated, manufacturable hardware."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -33,11 +33,11 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
+  github: "https://github.com/EnggAmmar",
+  linkedin: "https://www.linkedin.com/in/ammar-ahmed11/",
+  gmail: "ammarahmed.00748@gmail.com",
   gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
+  facebook: "https://www.facebook.com/Ammar0078/",
   medium: "https://medium.com/@saadpasta",
   stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -49,7 +49,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "MECHANICAL DESIGN & SIMULATION ENGINEER FOCUSED ON AEROSPACE AND ADVANCED ENGINEERING SYSTEMS",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -126,23 +126,24 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Friedrich-Alexander-Universität Erlangen–Nürnberg (FAU)",
+      logo: require("./assets/images/FAU.png"),
+      subHeader: "MSc Electromobility – ACES(E-train & Sustainable Production Technology)",
+      duration: "October 2024 - Current",
+      desc: "Focused on system-level design with a strong emphasis on sustainable, simulation-driven engineering.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Thesis: Reconfigurable 3U CubeSat Platform for IoT, Earth Observation, and Communication Missions",
+        "Relevant Coursework: Mecahtronics Component & Systems, Robot Mechanism and User Interface, Multibody Electric Drives, Electrical Energy Storage Systems, Machine Learning for Engineers, Signal Processing"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "National University of Sciences and Technology (NUST)",
+      logo: require("./assets/images/nust.png"),
+      subHeader: "Bachelor Engineering in Mechanical Engineering",
+      duration: "September 2018 - June 2022",
+      desc: "Developed foundation in mechanical design, thermodynamics, CFD, and structural analysis.",
+      descBullets: ["Thesis: Design and Development of Food Dryer based on unique combination of novel drying techniques and heat recovery systems",
+      "Published 2 research papers on Food Dyrying techniques in International Journals and secured funding from IGNITE",]
     }
   ]
 };
@@ -153,12 +154,12 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "3D Modelling", //Insert stack or technology you have experience in
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Simulation (FEA/CFD)",
+      progressPercentage: "90%"
     },
     {
       Stack: "Programming",
@@ -174,22 +175,24 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+      role: "Device Comissioning Engineer-Werkstudent",
+      company: "WS Audiology GmbH",
+      companylogo: require("./assets/images/wsa.jpg"),
+      date: "November 2024 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Supported electromechanical device testing and system integration",
+        "Performed structured diagnostics to identify design and integration issues",
+        "Collaborated with cross-functional teams to enhance device reliability"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Research Officer",
+      company: "National Aerospace Science and Technology Park (NASTP)",
+      companylogo: require("./assets/images/nastp.jpg"),
+      date: "April 2023 – June 2024",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: ["Designed and optimized mechanical components using simulation-driven methods", "Performed thermal, pressure, and structural analysis for electromechanical systems", "Coordinated with fabrication teams for test hardware development"]
     },
     {
       role: "Software Engineer Intern",
