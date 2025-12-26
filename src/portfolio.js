@@ -38,8 +38,7 @@ const socialMediaLinks = {
   gmail: "ammarahmed.00748@gmail.com",
   gitlab: "https://gitlab.com/saadpasta",
   facebook: "https://www.facebook.com/Ammar0078/",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  medium: "https://medium.com/@ammarbusy2", 
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +48,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "MECHANICAL DESIGN & SIMULATION ENGINEER FOCUSED ON AEROSPACE AND ADVANCED ENGINEERING SYSTEMS",
+  subTitle: "Mechanical Design & Simulation Engineer 🚀 focused on system-level design, propulsion systems, and simulation-driven hardware development.",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡Product Development (Concept → Market)"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡Propulsion Engines& Reconfigurable Satellite Systems"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ System-Level Design & Integration of Electromechanical Systems"
     )
   ],
 
@@ -198,8 +197,9 @@ const workExperiences = {
       role: "Mechanical Design Engineer",
       company: "Aero-Vision Technologies (AVT)",
       companylogo: require("./assets/images/avt.jpg"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "October 2022 – April 2023",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: ["Designed and developed modular UAVs and drones using additive manufacturing techniques", "Created detailed manufacturing drawings to support production and assembly","Optimized 3D printing processes and workflows for improved manufacturability and reliability", "Performed structural analysis to optimize designs for vibration, fatigue, and durability"]
     }
   ]
 };
