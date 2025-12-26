@@ -4,6 +4,14 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import solidworksLogo from "./assets/images/solidworks.png";
+import nxLogo from "./assets/images/nx.png";
+import catiaLogo from "./assets/images/catia.png";
+import matlabLogo from "./assets/images/matlab.png";
+import ansysLogo from "./assets/images/ansys.png";
+import pythonLogo from "./assets/images/python.png";
+import dockerLogo from "./assets/images/docker.png";
+
 
 // Splash Screen
 
@@ -63,59 +71,14 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
+  { skillName: "SolidWorks", logoPath: solidworksLogo },
+  { skillName: "Siemens NX", logoPath: nxLogo },
+  { skillName: "CATIA v6", logoPath: catiaLogo },
+  { skillName: "MATLAB", logoPath: matlabLogo },
+  { skillName: "ANSYS", logoPath: ansysLogo },
+  { skillName: "Python", logoPath: pythonLogo },
+  { skillName: "Docker", logoPath: dockerLogo }
+],
   display: true // Set false to hide this section, defaults to true
 };
 
