@@ -44,7 +44,6 @@ const socialMediaLinks = {
   github: "https://github.com/EnggAmmar",
   linkedin: "https://www.linkedin.com/in/ammar-ahmed11/",
   gmail: "ammarahmed.00748@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
   facebook: "https://www.facebook.com/Ammar0078/",
   medium: "https://medium.com/@ammarbusy2", 
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -141,20 +140,23 @@ const workExperiences = {
       company: "WS Audiology GmbH",
       companylogo: require("./assets/images/wsa.jpg"),
       date: "November 2024 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      
       descBullets: [
-        "Supported electromechanical device testing and system integration",
-        "Performed structured diagnostics to identify design and integration issues",
-        "Collaborated with cross-functional teams to enhance device reliability"
-      ]
+  "<strong>R&D Testing:</strong> Validated electroacoustic and wireless signal chains for next-gen hearing aids.",
+  "<strong>System Diagnostics:</strong> Led troubleshooting and calibration efforts across electrical and automation domains.",
+  "<strong>Workflow Automation:</strong> Enhanced data acquisition efficiency using Python-based test automation.",
+  "<strong>Analytics:</strong> Engineered Power BI reports to translate raw test data into actionable design insights."
+]
+
     },
     {
       role: "Research Officer",
       company: "National Aerospace Science and Technology Park (NASTP)",
       companylogo: require("./assets/images/nastp.jpg"),
       date: "April 2023 – June 2024",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: ["Designed and optimized mechanical components using simulation-driven methods", "Performed thermal, pressure, and structural analysis for electromechanical systems", "Coordinated with fabrication teams for test hardware development"]
+      descBullets: ["Designed the mechanical platform for a mobile radar system using SolidWorks and FEA (static + dynamic) to ensure structural strength and stability under real operating loads..", "Developed 3D-printed enclosures for radar electronics and ensured proper fit, thermal considerations, and cable-routing for reliable field deployment.", "Created precision fixtures and antenna test stands for R&D measurements, ensuring rigid mechanical interfaces and repeatable testing setups.", 
+        "Collaborated with electrical teams to integrate HVAC ducts and data-server equipment into the Operation's Cabin, ensuring smooth system-level compatibility."
+      ]
     },
     {
       role: "Mechanical Design Engineer",
@@ -338,8 +340,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+49 1556 0360166",
+  email_address: "ammarahmed.00748@gmail.com"
 };
 
 // Twitter Section

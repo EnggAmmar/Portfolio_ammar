@@ -1,19 +1,10 @@
-.experience-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1rem 1rem;
-}
-
-.experience-heading {
-  font-size: 56px;
-  font-weight: 400;
-}
+/* EXPERIENCE SECTION – LAYOUT */
 
 .experience-container {
   display: flex;
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 2rem;
 }
 
@@ -21,7 +12,65 @@
   flex: 1;
 }
 
-/* Media Query */
+/* HEADING */
+
+.experience-heading {
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+/* EXPERIENCE CARDS GRID */
+
+.experience-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  column-gap: 1.5rem;
+  row-gap: 2.5rem; /* space between experience cards */
+}
+
+/* EXPERIENCE TEXT BLOCK */
+
+.experience-text-details {
+  margin-top: 10px;
+}
+
+/* Role + date spacing */
+
+.experience-text-role {
+  margin-bottom: 6px;
+}
+
+.experience-text-date {
+  margin-bottom: 12px;
+}
+
+/* BULLET LIST */
+
+.experience-text-details ul {
+  margin-top: 16px;
+  padding-left: 22px;
+}
+
+.experience-text-details ul li.subTitle {
+  margin-bottom: 18px;   /* space BETWEEN bullets */
+  line-height: 1.65;     /* space WITHIN bullets */
+  max-width: 92%;
+  padding-left: 4px;
+  font-size: 0.95rem;
+}
+
+/* HIGHLIGHTED WORDS INSIDE BULLETS */
+
+.experience-text-details ul li.subTitle strong {
+  color: #ff6f00;      /* accent color for highlights */
+  font-weight: 600;     /* make bold */
+  background: rgba(255, 111, 0, 0.12); /* optional subtle background */
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* MEDIA QUERIES */
 
 @media (max-width: 1380px) {
   .experience-heading {
@@ -34,4 +83,15 @@
     font-size: 30px;
     text-align: center;
   }
-}
+
+  .experience-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .experience-text-details ul li.subTitle {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+} /* <- closes last media query */
