@@ -34,7 +34,7 @@ const greeting = {
     "A Mechanical Design & Simulation Engineer 🚀 with hands-on experience in aerospace systems, rocket propulsion, UAV structures, and simulation-driven product development. Skilled in CAD, FEA, CFD, and turning complex concepts into validated, manufacturable hardware."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "Ammar_Ahmed_Resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -60,9 +60,9 @@ const skillsSection = {
     emoji(
       "⚡Product Development (Concept → Market)"
     ),
-    emoji("⚡Propulsion Engines& Reconfigurable Satellite Systems"),
+    emoji("⚡Propulsion Engines & Reconfigurable Satellite Systems"),
     emoji(
-      "⚡ System-Level Design & Integration of Electromechanical Systems"
+      "⚡ UAV assembly and integration, system-level manufacturing and integration for UAVs"
     )
   ],
 
@@ -115,16 +115,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "3D Modelling", //Insert stack or technology you have experience in
+      Stack: "3D Modelling & Simulation", //Insert stack or technology you have experience in
       progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Simulation (FEA/CFD)",
+      Stack: "3D Printing Operations and Maintenance",
       progressPercentage: "90%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "UAV Fabrication and Integration",
+      progressPercentage: "90%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -136,35 +136,41 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Device Comissioning Engineer-Werkstudent",
-      company: "WS Audiology GmbH",
+      role: "Device Commissioning Engineer (Working Student)",
+      company: "WS Audiology GmbH, Germany",
       companylogo: require("./assets/images/wsa.jpg"),
-      date: "November 2024 – Present",
+      date: "Nov 2024 – Present",
       
       descBullets: [
-  "<strong>R&D Testing:</strong> Validated electroacoustic and wireless signal chains for next-gen hearing aids.",
-  "<strong>System Diagnostics:</strong> Led troubleshooting and calibration efforts across electrical and automation domains.",
-  "<strong>Workflow Automation:</strong> Enhanced data acquisition efficiency using Python-based test automation.",
-  "<strong>Analytics:</strong> Engineered Power BI reports to translate raw test data into actionable design insights."
-]
+        "Supported development and validation of hearing aid samples through structured subsystem and system-level testing.",
+        "Created and maintained technical documentation, test procedures, and component-level records supporting series development.",
+        "Built Power BI dashboards connected to SQL databases to visualize test results and evaluate performance metrics."
+      ]
 
     },
     {
-      role: "Research Officer",
-      company: "National Aerospace Science and Technology Park (NASTP)",
+      role: "Research Officer (Mechanical Engineer)",
+      company: "National Aerospace Science & Technology Park (NASTP), Pakistan",
       companylogo: require("./assets/images/nastp.jpg"),
-      date: "April 2023 – June 2024",
-      descBullets: ["Designed the mechanical platform for a mobile radar system using SolidWorks and FEA (static + dynamic) to ensure structural strength and stability under real operating loads..", "Developed 3D-printed enclosures for radar electronics and ensured proper fit, thermal considerations, and cable-routing for reliable field deployment.", "Created precision fixtures and antenna test stands for R&D measurements, ensuring rigid mechanical interfaces and repeatable testing setups.", 
-        "Collaborated with electrical teams to integrate HVAC ducts and data-server equipment into the Operation's Cabin, ensuring smooth system-level compatibility."
+      date: "Apr 2023 – Jun 2024",
+      descBullets: [
+        "Manufactured and assembled UAV prototypes at scale for testing, supporting iterative development before next-stage builds.",
+        "Built full demonstration drone models for pitching, including integration of electronics, propellers, actuators, landing gear, and structural components.",
+        "Supported transition toward glass fiber reinforced composite structures, improving prototype robustness for the next development phase.",
+        "Performed structural validation under aerodynamic and operational loading conditions to ensure component reliability."
       ]
     },
     {
-      role: "Mechanical Design Engineer",
-      company: "Aero-Vision Technologies (AVT)",
+      role: "Mechanical Design Engineer (UAV Prototyping)",
+      company: "Aero-Vision Technologies, Pakistan",
       companylogo: require("./assets/images/avt.jpg"),
-      date: "October 2022 – April 2023",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: ["Designed and developed modular UAVs and drones using additive manufacturing techniques", "Created detailed manufacturing drawings to support production and assembly","Optimized 3D printing processes and workflows for improved manufacturability and reliability", "Performed structural analysis to optimize designs for vibration, fatigue, and durability"]
+      date: "Oct 2022 – Apr 2023",
+      descBullets: [
+        "Designed foldable fixed-wing UAV structures and launch-tube deployment concepts for remote-area operations.",
+        "Produced UAV prototypes using FDM 3D printing (PLA, ABS), including CAD pre-processing and printer operation/maintenance.",
+        "Conducted CFD analysis to evaluate velocity/pressure profiles and estimate stall angle behavior for aerodynamic validation.",
+        "Integrated mechanical assemblies with electronics and sensors; gained hands-on exposure to ArduPilot flight control workflows."
+      ]
     }
   ]
 };
@@ -174,35 +180,109 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "Selected aerospace projects spanning UAV systems and propulsion design.",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
+      id: "uav-design",
+      projectName: "UAV Design, Fabrication & Integration",
+      projectDesc:
+        "Design and development of fixed-wing foldable UAVs, covering structural design, component integration, and system-level manufacturing for flight-ready prototypes.",
+      media: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          type: "video",
+          src: require("./assets/images/UAV Drone Simulation.mp4"),
+          alt: "UAV drone simulation",
+          caption:
+            "Velocity profile of air over the UAV for visualization of trailing edges, vortex generation"
+        },
+        {
+          type: "image",
+          src: require("./assets/images/projects/UAV Mesh_frame.png"),
+          alt: "UAV mesh model",
+          caption: "Meshed geometry of a UAV"
+        },
+        {
+          type: "image",
+          src: require("./assets/images/projects/uav 3d printed structure_frame.jpg"),
+          alt: "UAV 3D printed structure",
+          caption: "3D Printed Body of UAV before assembly"
+        },
+        {
+          type: "image",
+          src: require("./assets/images/projects/UAV fabricated_frame.jpeg"),
+          alt: "UAV fabricated airframe",
+          caption: "3D printed and assembled Fixed-wing Foldable UAVs"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
+      id: "rocket-concepts",
+      projectName: "Conceptual Development of Launch Vehicle and Rocket Engines",
+      projectDesc:
+        "Concept development of engine layout, injector, chamber, nozzle, and integration considerations for launch vehicle systems.",
+      media: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          type: "image",
+          src: require("./assets/images/projects/rocket engine_frame.jpg"),
+          alt: "Rocket engine components",
+          caption: ""
+        },
+        {
+          type: "image",
+          src: require("./assets/images/projects/Rocket Engine-cut model_frame.png"),
+          alt: "Rocket engine cut model",
+          caption: ""
+        },
+        {
+          type: "image",
+          src: require("./assets/images/projects/slv render_frame.jpg"),
+          alt: "Launch vehicle render",
+          caption: ""
+        },
+        {
+          type: "video",
+          src: require("./assets/images/rocket engine simulation.mp4"),
+          alt: "Rocket engine simulation",
+          caption: ""
+        }
+      ]
+    },
+    {
+      id: "3d-printing",
+      projectName: "3D Printing",
+      projectDesc: "",
+      media: [
+        {
+          type: "image",
+          src: require("./assets/images/projects/rocket engine nozzle 3d printed_frame.jpg"),
+          alt: "3D printed rocket engine nozzle",
+          caption: ""
+        },
+        {
+          type: "image",
+          src: require("./assets/images/projects/uav 3d printed structure_frame.jpg"),
+          alt: "3D printed UAV structure",
+          caption: ""
+        }
+      ]
+    },
+    {
+      id: "fsdt",
+      projectName: "Formula Student Development Team, NUST FSDT",
+      projectDesc: "",
+      media: [
+        {
+          type: "image",
+          src: require("./assets/images/FSDT_1.JPG"),
+          alt: "NUST Formula Student Development Team",
+          caption: ""
         }
       ]
     }
@@ -214,61 +294,10 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  title: "Research Papers",
+  subtitle: "Selected publications and research contributions.",
+  achievementsCards: [],
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -292,7 +321,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -311,7 +340,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -324,7 +353,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
