@@ -1,5 +1,5 @@
 {
-  "homepage": "https://developerfolio.js.org/",
+  "homepage": "https://enggammar.github.io/Portfolio_ammar",
   "name": "developerfolio",
   "version": "0.1.0",
   "private": true,
@@ -53,6 +53,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "dotenv": "^8.2.0",
+    "playwright": "^1.57.0",
     "prettier": "^2.3.1"
   }
 }
