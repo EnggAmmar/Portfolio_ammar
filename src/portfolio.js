@@ -236,6 +236,12 @@ const bigProjects = {
         },
         {
           type: "image",
+          src: require("./assets/images/projects/rocket_engine_assembly.JPG"),
+          alt: "Rocket engine assembly",
+          caption: ""
+        },
+        {
+          type: "image",
           src: require("./assets/images/projects/Rocket Engine-cut model_frame.png"),
           alt: "Rocket engine cut model",
           caption: ""
