@@ -78,6 +78,23 @@
   margin-top: 0.5rem;
 }
 
+.education-text-bullets .subTitle {
+  color: $textColorDark !important;
+}
+
+.dark-mode .education-card,
+.dark-mode .education-card * {
+  color: $textColorDark;
+}
+
+.dark-mode .education-text-school,
+.dark-mode .education-text-subHeader,
+.dark-mode .education-text-duration,
+.dark-mode .education-text-desc,
+.dark-mode .education-text-bullets .subTitle {
+  color: $textColorDark;
+}
+
 /* Media Query */
 
 @media (max-width: 1380px) {

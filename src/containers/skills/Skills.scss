@@ -21,8 +21,18 @@
 }
 
 .skills-heading {
-  font-size: 56px;
+  font-size: 64px;
   font-weight: 400;
+}
+
+.skills-text-subtitle {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.skills-text {
+  font-size: 20px;
+  line-height: 1.6;
 }
 .subTitle {
   color: $subTitle;
@@ -31,7 +41,7 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .skills-heading {
-    font-size: 40px;
+    font-size: 48px;
   }
 }
 @media (max-width: 768px) {

@@ -11,6 +11,7 @@ import matlabLogo from "./assets/images/matlab.png";
 import ansysLogo from "./assets/images/ansys.png";
 import pythonLogo from "./assets/images/python.png";
 import dockerLogo from "./assets/images/docker.png";
+import easyedaLogo from "./assets/images/easyeda-thumbnail.png";
 
 
 // Splash Screen
@@ -76,7 +77,8 @@ https://fontawesome.com/icons?d=gallery */
   { skillName: "MATLAB", logoPath: matlabLogo },
   { skillName: "ANSYS", logoPath: ansysLogo },
   { skillName: "Python", logoPath: pythonLogo },
-  { skillName: "Docker", logoPath: dockerLogo }
+  { skillName: "Docker", logoPath: dockerLogo },
+  { skillName: "EasyEDA", logoPath: easyedaLogo }
 ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -187,7 +189,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "Selected aerospace projects spanning UAV systems and propulsion design.",
+  subtitle: "",
   projects: [
     {
       id: "uav-design",
@@ -230,32 +232,20 @@ const bigProjects = {
       media: [
         {
           type: "image",
-          src: require("./assets/images/projects/rocket engine_frame.jpg"),
-          alt: "Rocket engine components",
-          caption: ""
-        },
-        {
-          type: "image",
-          src: require("./assets/images/projects/rocket_engine_assembly.JPG"),
-          alt: "Rocket engine assembly",
-          caption: ""
-        },
-        {
-          type: "image",
-          src: require("./assets/images/projects/Rocket Engine-cut model_frame.png"),
-          alt: "Rocket engine cut model",
-          caption: ""
-        },
-        {
-          type: "image",
-          src: require("./assets/images/projects/slv render_frame.jpg"),
+          src: require("./assets/images/projects/slv render.JPG"),
           alt: "Launch vehicle render",
           caption: ""
         },
         {
-          type: "video",
-          src: require("./assets/images/rocket engine simulation.mp4"),
-          alt: "Rocket engine simulation",
+          type: "image",
+          src: require("./assets/images/projects/rocket engine_2.jpg"),
+          alt: "Rocket engine concept",
+          caption: ""
+        },
+        {
+          type: "image",
+          src: require("./assets/images/projects/rocket engine_3.jpg"),
+          alt: "Rocket engine concept detail",
           caption: ""
         }
       ]

@@ -15,14 +15,18 @@
   flex-direction: column;
   align-items: center;
   margin: 15px;
-  width: 90px;
+  width: 110px;
   text-align: center;
+}
+
+.software-skill-inline p {
+  font-size: 16px;
 }
 
 /* 🔥 Logo container */
 .software-skill-image-wrapper {
-  width: 48px;
-  height: 48px;
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,8 +40,8 @@
 
 
 .software-skill-image {
-  width: 48px;
+  width: 64px;
   height: auto;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   object-fit: contain;
 }
