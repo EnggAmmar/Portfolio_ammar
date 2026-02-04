@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio_ammar/static/css/main.517fd2c6.css",
-    "main.js": "/Portfolio_ammar/static/js/main.d5d28550.js",
+    "main.js": "/Portfolio_ammar/static/js/main.da0af8d7.js",
     "static/css/64.386cb6fa.chunk.css": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css",
@@ -33,7 +33,7 @@
     "index.html": "/Portfolio_ammar/index.html",
     "static/media/talksCardBack.svg": "/Portfolio_ammar/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.517fd2c6.css.map": "/Portfolio_ammar/static/css/main.517fd2c6.css.map",
-    "main.d5d28550.js.map": "/Portfolio_ammar/static/js/main.d5d28550.js.map",
+    "main.da0af8d7.js.map": "/Portfolio_ammar/static/js/main.da0af8d7.js.map",
     "64.386cb6fa.chunk.css.map": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css.map",
@@ -41,6 +41,6 @@
   },
   "entrypoints": [
     "static/css/main.517fd2c6.css",
-    "static/js/main.d5d28550.js"
+    "static/js/main.da0af8d7.js"
   ]
 }
