@@ -1,12 +1,15 @@
 {
   "files": {
     "main.css": "/Portfolio_ammar/static/css/main.517fd2c6.css",
-    "main.js": "/Portfolio_ammar/static/js/main.2776c2cc.js",
+    "main.js": "/Portfolio_ammar/static/js/main.d5d28550.js",
     "static/css/64.386cb6fa.chunk.css": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.0db0762a.chunk.js": "/Portfolio_ammar/static/js/769.0db0762a.chunk.js",
     "static/media/UAV Drone Simulation.mp4": "/Portfolio_ammar/static/media/UAV Drone Simulation.2687b050309a54200f96.mp4",
+    "static/media/3d_print_2_frame.png": "/Portfolio_ammar/static/media/3d_print_2_frame.007e4e81830a07220ca7.png",
+    "static/media/3d_print_3_frame.png": "/Portfolio_ammar/static/media/3d_print_3_frame.36a85ad965b78a6e00ed.png",
+    "static/media/3d_print_1.mp4": "/Portfolio_ammar/static/media/3d_print_1.fb2c01faf226c0517d95.mp4",
     "static/media/matlab.png": "/Portfolio_ammar/static/media/matlab.da367484ed0b868b5fec.png",
     "static/media/Montserrat-Regular.ttf": "/Portfolio_ammar/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/UAV fabricated_frame.jpeg": "/Portfolio_ammar/static/media/UAV fabricated_frame.4e3a21bce797ae383ce6.jpeg",
@@ -17,7 +20,6 @@
     "static/media/Agustina.woff": "/Portfolio_ammar/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/Ammar_Ahmed_Resume.pdf": "/Portfolio_ammar/static/media/Ammar_Ahmed_Resume.faba620de7eb0895a0da.pdf",
     "static/media/rocket engine_3.jpg": "/Portfolio_ammar/static/media/rocket engine_3.b9b8caf979dc5cac0e66.jpg",
-    "static/media/rocket engine nozzle 3d printed_frame.jpg": "/Portfolio_ammar/static/media/rocket engine nozzle 3d printed_frame.7654caa6af663d2def8b.jpg",
     "static/media/manOnTable.svg": "/Portfolio_ammar/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/slv render.JPG": "/Portfolio_ammar/static/media/slv render.d98f33b8d9bc778651ac.JPG",
     "static/media/contactMailDark.svg": "/Portfolio_ammar/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
@@ -31,7 +33,7 @@
     "index.html": "/Portfolio_ammar/index.html",
     "static/media/talksCardBack.svg": "/Portfolio_ammar/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.517fd2c6.css.map": "/Portfolio_ammar/static/css/main.517fd2c6.css.map",
-    "main.2776c2cc.js.map": "/Portfolio_ammar/static/js/main.2776c2cc.js.map",
+    "main.d5d28550.js.map": "/Portfolio_ammar/static/js/main.d5d28550.js.map",
     "64.386cb6fa.chunk.css.map": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css.map",
@@ -39,6 +41,6 @@
   },
   "entrypoints": [
     "static/css/main.517fd2c6.css",
-    "static/js/main.2776c2cc.js"
+    "static/js/main.d5d28550.js"
   ]
 }
