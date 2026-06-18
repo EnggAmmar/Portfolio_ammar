@@ -189,13 +189,13 @@ const openSource = {
 const bigProjects = {
   title: "Engineering Projects",
   subtitle:
-    "Selected work grouped by engineering domain, from aerospace structures and propulsion concepts to robotics, automotive systems, and data-driven analysis.",
+    "Selected work grouped by engineering domain, from aerospace systems and thermal hardware to automotive validation, robotics, and data-driven engineering tools.",
   domains: [
     {
       id: "aerospace",
       name: "Aerospace",
       summary:
-        "UAV systems, satellite launch vehicle concepts, propulsion layouts, and CubeSat platform development.",
+        "UAV systems, launch vehicle and rocket engine concepts, propulsion thermal control, and CubeSat architecture tools.",
       projects: [
         {
           id: "uav-design",
@@ -228,15 +228,28 @@ const bigProjects = {
               src: require("./assets/images/projects/UAV fabricated_frame.jpeg"),
               alt: "UAV fabricated airframe",
               caption: "Assembled fixed-wing foldable UAV airframes."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/uav-wings.jpg"),
+              alt: "UAV wing structure",
+              caption:
+                "UAV wing structure and fabrication reference from the project archive."
             }
           ]
         },
         {
           id: "launch-vehicle",
-          projectName: "Satellite Launch Vehicle & Rocket Engine Concepts",
+          projectName: "Satellite Launch Vehicle & 25 kN Rocket Engine",
           projectDesc:
-            "Concept development for launch vehicle architecture and rocket engine subsystems, including chamber, injector, nozzle, engine assembly, and structural integration considerations.",
-          tags: ["SLV", "Rocket engine", "Propulsion", "Concept design"],
+            "Conceptual development of a satellite launch vehicle and cryogenic liquid-propellant engine system using LOX/RP-1 architecture. Work included propellant tanks, anti-slosh baffles, piping interfaces, coaxial swirl injector concepts, engine assembly CAD, sensor placement, ANSYS tank stress checks, and regenerative cooling studies for high-temperature nozzle regions.",
+          tags: [
+            "SLV",
+            "25 kN engine",
+            "LOX/RP-1",
+            "Regenerative cooling",
+            "ANSYS Fluent"
+          ],
           media: [
             {
               type: "image",
@@ -246,31 +259,61 @@ const bigProjects = {
             },
             {
               type: "image",
-              src: require("./assets/images/projects/rocket_engine_assembly.JPG"),
-              alt: "Rocket engine assembly",
-              caption: "Rocket engine assembly concept."
+              src: require("./assets/images/projects/database-upgrade/rocket-25kn-engine.jpg"),
+              alt: "25 kN liquid rocket engine concept",
+              caption: "25 kN liquid rocket engine concept assembly."
             },
             {
               type: "image",
-              src: require("./assets/images/projects/rocket engine_2.jpg"),
-              alt: "Rocket engine concept",
-              caption: "Rocket engine concept development."
+              src: require("./assets/images/projects/database-upgrade/rocket-cut-model.jpg"),
+              alt: "Rocket engine cut model",
+              caption:
+                "Cut-model view for chamber, injector, nozzle, and internal layout communication."
             },
             {
               type: "image",
-              src: require("./assets/images/projects/rocket engine_3.jpg"),
-              alt: "Rocket engine concept detail",
-              caption: "Engine detail concept visualization."
+              src: require("./assets/images/projects/database-upgrade/rocket-pathlines.jpg"),
+              alt: "Rocket engine flow pathlines simulation",
+              caption:
+                "Flow visualization used to evaluate internal fluid behavior and thermal loading."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/rocket-track.jpg"),
+              alt: "Rocket engine thermal simulation track",
+              caption:
+                "Simulation result view supporting regenerative cooling and wall-temperature assessment."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/rocket-nozzle-printed.jpg"),
+              alt: "3D printed rocket engine nozzle",
+              caption: "3D printed nozzle prototype for physical design review."
             }
           ]
         },
         {
           id: "cubesat-platform",
-          projectName: "Reconfigurable 3U CubeSat Platform",
+          projectName: "CubeSat Design Configurator & 3U Platform",
           projectDesc:
-            "MSc thesis work focused on a reconfigurable 3U CubeSat platform for IoT, Earth observation, and communication missions, with emphasis on modular mechanical architecture and mission adaptability.",
-          tags: ["CubeSat", "3U platform", "Modular design", "Space systems"],
-          media: []
+            "A mission-driven CubeSat design configurator for early-phase architecture decisions across remote sensing, IoT/communication, and navigation missions. The tool uses a React frontend, FastAPI backend, subsystem databases, and CP-SAT optimization to select feasible platform, power, ADCS, onboard computer, communication, and thermal subsystem options with explainable solver traces.",
+          tags: ["CubeSat", "MBSE", "CP-SAT", "React", "FastAPI", "Docker"],
+          media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/cubesat-configurator-01.jpg"),
+              alt: "CubeSat design configurator architecture",
+              caption:
+                "CubeSat configurator concept for mission-driven architecture selection."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/cubesat-configurator-02.jpg"),
+              alt: "CubeSat platform visualization",
+              caption:
+                "Reconfigurable 3U CubeSat platform direction for IoT, Earth observation, and communication missions."
+            }
+          ]
         }
       ]
     },
@@ -278,14 +321,20 @@ const bigProjects = {
       id: "mechanical",
       name: "Mechanical",
       summary:
-        "Electromechanical systems, mechanical interface design, additive manufacturing, and validated hardware assemblies.",
+        "Mechanical interfaces, electromechanical packaging, additive manufacturing, heat sinks, and thermal simulation studies.",
       projects: [
         {
           id: "mechanical-interfaces",
-          projectName: "Mechanical Interface Design & 3D Printing",
+          projectName: "Mechanical Interface Design & Additive Manufacturing",
           projectDesc:
-            "Mechanical interface and prototype development using CAD-driven design, FDM manufacturing, fit checks, assembly refinement, and functional hardware iteration.",
-          tags: ["Mechanical interfaces", "3D printing", "CAD", "Assembly"],
+            "Mechanical interface and prototype development using CAD-driven design, FDM manufacturing, printer operation, fit checks, assembly refinement, and physical validation of printed engineering parts.",
+          tags: [
+            "Mechanical interfaces",
+            "3D printing",
+            "CAD",
+            "Assembly",
+            "Prototyping"
+          ],
           media: [
             {
               type: "video",
@@ -296,15 +345,22 @@ const bigProjects = {
             },
             {
               type: "image",
-              src: require("./assets/images/projects/3d_print_2_frame.png"),
-              alt: "3D printed part close-up",
-              caption: "Printed component detail after fabrication."
+              src: require("./assets/images/projects/database-upgrade/printing-printer-01.jpg"),
+              alt: "3D printer setup",
+              caption: "3D printer setup used for prototype fabrication."
             },
             {
               type: "image",
-              src: require("./assets/images/projects/3d_print_3_frame.png"),
-              alt: "3D printed part assembly",
-              caption: "Prototype assembly built from printed components."
+              src: require("./assets/images/projects/database-upgrade/printing-printer-02.jpg"),
+              alt: "3D printer operation",
+              caption: "Printer operation and build setup during fabrication."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/printing-model-01.jpg"),
+              alt: "3D printed model",
+              caption:
+                "Printed model used for design review and fit validation."
             }
           ]
         },
@@ -315,6 +371,55 @@ const bigProjects = {
             "System-level mechanical development involving packaged assemblies, component positioning, actuator and sensor accommodation, and design coordination across mechanical and electrical interfaces.",
           tags: ["Electromechanical", "Packaging", "Actuators", "Sensors"],
           media: []
+        },
+        {
+          id: "heat-sink-design",
+          projectName: "Heat Sink Design for Multi-PCB Electronics",
+          projectDesc:
+            "Thermal-management work for electronics packaging, including multi-PCB heat-sink concepts and simulation-informed geometry decisions for compact hardware operating under elevated ambient conditions.",
+          tags: ["Heat sink", "Thermal design", "Electronics cooling", "CFD"],
+          media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/thermal-heatsink-01.jpg"),
+              alt: "Multi PCB heat sink concept",
+              caption: "Multi-PCB heat sink concept and packaging layout."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/thermal-heatsink-02.jpg"),
+              alt: "Heat sink model detail",
+              caption: "Heat sink model detail for electronics cooling."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/thermal-heatsink-03.jpg"),
+              alt: "Heat sink assembly",
+              caption: "Thermal assembly view for compact PCB hardware."
+            }
+          ]
+        },
+        {
+          id: "thermal-conduction-study",
+          projectName: "Thermal Conduction Geometry Study",
+          projectDesc:
+            "Thermal conduction study for an industrial/military ambient condition of 70 C, targeting a maximum component temperature below 110 C. Geometry variants were compared, and the 45-degree slope part was selected from the study results.",
+          tags: ["Thermal simulation", "Conduction", "ANSYS", "Design study"],
+          media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/thermal-conduction-geometry.jpg"),
+              alt: "Thermal conduction study geometry",
+              caption: "Baseline geometry used for conduction study setup."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/thermal-conduction-45.jpg"),
+              alt: "45 degree slope thermal design",
+              caption:
+                "Selected 45-degree slope part after thermal design comparison."
+            }
+          ]
         }
       ]
     },
@@ -322,8 +427,48 @@ const bigProjects = {
       id: "automotive",
       name: "Automotive",
       summary:
-        "Vehicle-team engineering exposure, race-car subsystem development, and mechanical design workflows.",
+        "Automotive validation, CAN communication, SIL/HIL-inspired test workflows, and Formula Student engineering.",
       projects: [
+        {
+          id: "can-sil-validation",
+          projectName: "HIL-Inspired CAN Validation Platform with SIL",
+          projectDesc:
+            "Automotive ECU validation platform combining ESP32/MCP2515 CAN hardware with a Python SIL extension. The software layer simulates CAN messages, ECU logic, DBC-style signal decoding, fault injection, automated PASS/FAIL tests, and CSV reporting for signals such as vehicle speed, RPM, battery voltage, brake status, and coolant temperature.",
+          tags: [
+            "CAN bus",
+            "SIL",
+            "HIL-inspired",
+            "ESP32",
+            "MCP2515",
+            "Python"
+          ],
+          media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/automotive-can-01.jpg"),
+              alt: "Automotive CAN validation hardware",
+              caption: "ESP32 and MCP2515 hardware setup for CAN validation."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/automotive-can-02.jpg"),
+              alt: "CAN testbench wiring",
+              caption: "Hardware CAN testbench wiring and module layout."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/automotive-can-03.jpg"),
+              alt: "CAN validation electronics",
+              caption: "CAN validation electronics during bench testing."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/automotive-can-04.jpg"),
+              alt: "CAN validation setup",
+              caption: "CAN validation setup prepared for SIL/HIL workflow."
+            }
+          ]
+        },
         {
           id: "fsdt",
           projectName: "Formula Student Development Team, NUST FSDT",
@@ -345,14 +490,19 @@ const bigProjects = {
       id: "robotics",
       name: "Robotics",
       summary:
-        "Control design, schematic design, mechatronic hardware, and exoskeleton-arm concepts.",
+        "Control design, electronic schematic design, robot mechanism coursework, and exoskeleton-arm concepts.",
       projects: [
         {
           id: "robotic-control",
           projectName: "Robotic Control & Electronics Design",
           projectDesc:
-            "Robotics-focused work covering control design, electronics schematic planning, mechatronic component selection, and integration thinking for actuation-driven systems.",
-          tags: ["Control design", "Schematics", "Mechatronics"],
+            "Robotics-focused work covering control design, electronics schematic planning, mechatronic component selection, robot mechanism studies, and integration thinking for actuation-driven systems.",
+          tags: [
+            "Control design",
+            "Schematics",
+            "Mechatronics",
+            "Robot mechanisms"
+          ],
           media: []
         },
         {
@@ -369,124 +519,39 @@ const bigProjects = {
       id: "data-analysis",
       name: "Data Analysis",
       summary:
-        "EDA, machine learning, dashboards, engineering data workflows, and chatbot-oriented automation.",
+        "EDA, machine learning, dashboards, engineering data workflows, CAD automation, and chatbot-oriented automation.",
       projects: [
         {
-          id: "engineering-data-analytics",
-          projectName: "Engineering Data Analytics, ML & Dashboards",
+          id: "fea-ml-beam-predictor",
+          projectName: "FEA Data ML Predictor for Beam Deformation",
           projectDesc:
-            "Data analysis workflows using Python, SQL-connected dashboards, exploratory data analysis, and machine learning coursework applied to engineering and test-result interpretation.",
-          tags: ["EDA", "Machine learning", "Power BI", "SQL", "Python"],
+            "Machine-learning workflow using ANSYS-derived cantilever beam data to predict deformation from parameterized inputs. The model uses Python, pandas, scikit-learn, train/test validation, Random Forest regression, R2/RMSE evaluation, and actual-versus-predicted plotting.",
+          tags: ["FEA data", "Machine learning", "Random Forest", "Python"],
+          media: []
+        },
+        {
+          id: "stock-dashboard",
+          projectName: "Interactive Stock Data Dashboard",
+          projectDesc:
+            "FastAPI and Plotly dashboard for comparing stock time-series data across Nvidia, Intel, Tesla, and Microsoft. The project fetches market data, transforms it with pandas, and renders interactive line and pie charts for exploratory analysis.",
+          tags: ["FastAPI", "Plotly", "Pandas", "EDA", "Dashboard"],
+          media: []
+        },
+        {
+          id: "cad-webxr-automation",
+          projectName: "CAD to WebXR Geometry Automation",
+          projectDesc:
+            "Automation script for converting batches of DXF geometry into GLB assets using Blender Python. The workflow supports browser/WebXR visualization by importing CAD files, normalizing scale and origin, and exporting optimized glTF models.",
+          tags: ["Blender Python", "DXF", "GLB", "WebXR", "Automation"],
           media: []
         },
         {
           id: "chatbot-automation",
-          projectName: "Chatbots & Workflow Automation",
+          projectName: "Chatbots & Engineering Workflow Automation",
           projectDesc:
             "Chatbot and automation-oriented project direction for structured technical workflows, documentation support, and engineering knowledge retrieval.",
           tags: ["Chatbots", "Automation", "Knowledge workflows"],
           media: []
-        }
-      ]
-    }
-  ],
-  projects: [
-    {
-      id: "uav-design",
-      projectName: "UAV Design, Fabrication & Integration",
-      projectDesc:
-        "Design and development of fixed-wing foldable UAVs, covering structural design, component integration, and system-level manufacturing for flight-ready prototypes.",
-      media: [
-        {
-          type: "video",
-          src: require("./assets/images/UAV Drone Simulation.mp4"),
-          alt: "UAV drone simulation",
-          caption:
-            "Velocity profile of air over the UAV for visualization of trailing edges, vortex generation"
-        },
-        {
-          type: "image",
-          src: require("./assets/images/projects/UAV Mesh_frame.png"),
-          alt: "UAV mesh model",
-          caption: "Meshed geometry of a UAV"
-        },
-        {
-          type: "image",
-          src: require("./assets/images/projects/uav 3d printed structure_frame.jpg"),
-          alt: "UAV 3D printed structure",
-          caption: "3D Printed Body of UAV before assembly"
-        },
-        {
-          type: "image",
-          src: require("./assets/images/projects/UAV fabricated_frame.jpeg"),
-          alt: "UAV fabricated airframe",
-          caption: "3D printed and assembled Fixed-wing Foldable UAVs"
-        }
-      ]
-    },
-    {
-      id: "rocket-concepts",
-      projectName:
-        "Conceptual Development of Launch Vehicle and Rocket Engines",
-      projectDesc:
-        "Concept development of engine layout, injector, chamber, nozzle, and integration considerations for launch vehicle systems.",
-      media: [
-        {
-          type: "image",
-          src: require("./assets/images/projects/slv render.JPG"),
-          alt: "Launch vehicle render",
-          caption: ""
-        },
-        {
-          type: "image",
-          src: require("./assets/images/projects/rocket engine_2.jpg"),
-          alt: "Rocket engine concept",
-          caption: ""
-        },
-        {
-          type: "image",
-          src: require("./assets/images/projects/rocket engine_3.jpg"),
-          alt: "Rocket engine concept detail",
-          caption: ""
-        }
-      ]
-    },
-    {
-      id: "3d-printing",
-      projectName: "3D Printing",
-      projectDesc: "",
-      media: [
-        {
-          type: "video",
-          src: require("./assets/3d_print_1.mp4"),
-          alt: "3D printing process video",
-          muted: true,
-          caption: ""
-        },
-        {
-          type: "image",
-          src: require("./assets/images/projects/3d_print_2_frame.png"),
-          alt: "3D printed part close-up",
-          caption: ""
-        },
-        {
-          type: "image",
-          src: require("./assets/images/projects/3d_print_3_frame.png"),
-          alt: "3D printed part assembly",
-          caption: ""
-        }
-      ]
-    },
-    {
-      id: "fsdt",
-      projectName: "Formula Student Development Team, NUST FSDT",
-      projectDesc: "",
-      media: [
-        {
-          type: "image",
-          src: require("./assets/images/FSDT_1.JPG"),
-          alt: "NUST Formula Student Development Team",
-          caption: ""
         }
       ]
     }
