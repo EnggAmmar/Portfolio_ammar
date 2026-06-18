@@ -56,6 +56,8 @@ export default function StartupProject() {
     selectedMediaIndex >= 0 && selectedMediaIndex < mediaItems.length
       ? mediaItems[selectedMediaIndex]
       : null;
+  const getMediaSrc = media =>
+    media && media.src && media.src.default ? media.src.default : media.src;
 
   if (!bigProjects.display || !selectedDomain || !selectedProject) {
     return null;
@@ -167,7 +169,7 @@ export default function StartupProject() {
               <div className="project-media-main">
                 {activeMedia.type === "image" ? (
                   <img
-                    src={activeMedia.src}
+                    src={getMediaSrc(activeMedia)}
                     alt={
                       activeMedia.alt ||
                       `${selectedProject.projectName} selected`
@@ -181,7 +183,7 @@ export default function StartupProject() {
                     preload="metadata"
                     muted={Boolean(activeMedia.muted)}
                   >
-                    <source src={activeMedia.src} type="video/mp4" />
+                    <source src={getMediaSrc(activeMedia)} type="video/mp4" />
                   </video>
                 )}
                 {activeMedia.caption ? (
@@ -198,10 +200,6 @@ export default function StartupProject() {
               <div className="project-empty-media">
                 <span>{selectedDomain.name}</span>
                 <h3>{selectedProject.projectName}</h3>
-                <p>
-                  Project images can be added in the project media list once the
-                  final assets are available.
-                </p>
               </div>
             )}
             <div className="project-content">
@@ -242,7 +240,7 @@ export default function StartupProject() {
                       >
                         {media.type === "image" ? (
                           <img
-                            src={media.src}
+                            src={getMediaSrc(media)}
                             alt={
                               media.alt ||
                               `${selectedProject.projectName} preview ${
