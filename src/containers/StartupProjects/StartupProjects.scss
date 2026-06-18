@@ -22,7 +22,7 @@
   flex-direction: column;
   background-color: $lightBackground2;
   padding: 1.5rem;
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid $lightBorder1;
   justify-content: center;
   max-width: 1120px;
@@ -61,26 +61,109 @@
   align-items: center;
 }
 
+.project-domain-tabs {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 1rem;
+}
+
+.project-domain-tab {
+  border: 1px solid rgba(108, 99, 255, 0.28);
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  color: $titleColor;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.project-domain-tab.dark-mode {
+  background: rgba(255, 255, 255, 0.05);
+  color: $textColorDark;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.project-domain-tab:hover {
+  transform: translateY(-1px);
+  border-color: $buttonColor;
+}
+
+.project-domain-tab-active,
+.project-domain-tab-active.dark-mode {
+  background: $buttonColor;
+  border-color: $buttonColor;
+  color: $lightBackground3;
+}
+
+.project-domain-header {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.35fr) minmax(0, 0.65fr);
+  gap: 1.5rem;
+  align-items: end;
+  margin: 1.25rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(127, 141, 170, 0.22);
+}
+
+.project-domain-label {
+  color: $buttonColor;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  margin: 0 0 0.35rem;
+  text-transform: uppercase;
+}
+
+.project-domain-title {
+  color: $titleColor;
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.dark-mode .project-domain-title {
+  color: $textColorDark;
+}
+
+.project-domain-summary {
+  color: $cardSubtitle;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.project-domain-summary.dark-mode {
+  color: rgba(255, 255, 255, 0.78);
+}
+
 .project-selector-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
   margin: 1.5rem 0 2rem;
 }
 
 .project-selector-card {
   border: 1px solid $lightBorder1;
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 1.25rem;
   background: $lightBackground2;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  min-height: 110px;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .project-selector-card.dark-mode {
-  background: $darkBackground;
+  background: rgba(255, 255, 255, 0.04);
   border-color: rgba(255, 255, 255, 0.08);
 }
 
@@ -96,10 +179,20 @@
 .project-selector-card-active {
   border-color: $buttonColor;
   box-shadow: $lightBoxShadowDark 0px 14px 30px -16px;
+  background: linear-gradient(
+    180deg,
+    rgba(108, 99, 255, 0.1),
+    $lightBackground2
+  );
 }
 
 .project-selector-card-active.dark-mode {
   box-shadow: 0px 14px 30px -16px $darkBoxShadow;
+  background: linear-gradient(
+    180deg,
+    rgba(108, 99, 255, 0.2),
+    rgba(255, 255, 255, 0.04)
+  );
 }
 
 .project-selector-title {
@@ -114,6 +207,65 @@
   color: $textColorDark;
 }
 
+.project-selector-desc {
+  color: $cardSubtitle;
+  display: -webkit-box;
+  font-size: 14px;
+  line-height: 1.45;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.project-selector-card.dark-mode .project-selector-desc {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.project-selector-tags,
+.project-tag-list {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.project-tag {
+  background: rgba(108, 99, 255, 0.12);
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  border-radius: 999px;
+  color: $buttonColor;
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0.25rem 0.65rem;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.dark-mode .project-tag {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.project-content {
+  max-width: 960px;
+  margin: 1.25rem auto 0;
+  width: 100%;
+}
+
+.project-description {
+  color: $cardSubtitle;
+  font-size: 17px;
+  line-height: 1.65;
+  margin: 0 0 1rem;
+}
+
+.project-description.dark-mode {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .project-media {
   display: flex;
   flex-direction: column;
@@ -124,7 +276,7 @@
 
 .project-media-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 0.75rem;
   width: 100%;
 }
@@ -133,8 +285,10 @@
   padding: 0;
   border: 2px solid transparent;
   background: transparent;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
 }
 
 .project-media-thumb-active {
@@ -143,8 +297,7 @@
 
 .project-media-image {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -156,7 +309,8 @@
 
 .project-video {
   width: 100%;
-  height: 624px;
+  aspect-ratio: 16 / 9;
+  height: auto;
   border-radius: 8px;
   background: #000;
   object-fit: contain;
@@ -170,17 +324,18 @@
 
 .project-media-main-image {
   width: 100%;
-  height: 624px;
-  border-radius: 12px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border-radius: 8px;
   object-fit: cover;
   object-position: center;
   background: #000;
+  display: block;
 }
 
 .project-media-video-thumb {
   width: 100%;
-  min-height: 140px;
-  border-radius: 8px;
+  height: 100%;
   background: $lightBackground3;
   color: $titleColor;
   display: flex;
@@ -191,22 +346,65 @@
   text-transform: uppercase;
 }
 
-.project-card-footer span.project-tag {
-  background: $buttonColor;
-  color: $lightBackground3;
-  vertical-align: middle;
+.project-card-dark {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.project-empty-media {
+  min-height: 360px;
+  border: 1px dashed rgba(127, 141, 170, 0.4);
+  border-radius: 8px;
+  background: linear-gradient(
+      135deg,
+      rgba(108, 99, 255, 0.12),
+      rgba(20, 184, 166, 0.08)
+    ),
+    $lightBackground2;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  border-radius: 4px;
-  display: inline-flex;
-  font-size: 0.75rem;
-  height: 2em;
   justify-content: center;
-  white-space: nowrap;
-  line-height: 1.5;
-  margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
-  cursor: pointer;
-  transition: 0.2s ease-in;
+  text-align: center;
+  padding: 2rem;
+}
+
+.project-empty-media span {
+  color: $buttonColor;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-empty-media h3 {
+  color: $titleColor;
+  font-size: 28px;
+  line-height: 1.25;
+  margin: 0.75rem 0;
+}
+
+.project-empty-media p {
+  color: $cardSubtitle;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 520px;
+}
+
+.project-card-dark .project-empty-media {
+  background: linear-gradient(
+      135deg,
+      rgba(108, 99, 255, 0.18),
+      rgba(20, 184, 166, 0.12)
+    ),
+    rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.project-card-dark .project-empty-media h3,
+.project-card-dark .project-empty-media p {
+  color: $textColorDark;
 }
 
 @media (max-width: 768px) {
@@ -216,22 +414,41 @@
   }
 
   .project-selector-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: 1fr;
   }
 
-  .project-media-main-image,
-  .project-video {
-    height: 468px;
+  .project-domain-header {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    text-align: left;
+  }
+
+  .project-domain-title {
+    font-size: 26px;
+  }
+
+  .project-card {
+    padding: 1rem;
   }
 }
 
 @media (max-width: 576px) {
-  .project-selector-grid {
-    grid-template-columns: 1fr;
+  .project-domain-tabs {
+    gap: 0.5rem;
   }
 
-  .project-media-main-image,
-  .project-video {
-    height: 312px;
+  .project-domain-tab {
+    flex: 1 1 calc(50% - 0.5rem);
+    padding: 0.65rem 0.75rem;
+    font-size: 13px;
+  }
+
+  .project-empty-media {
+    min-height: 280px;
+    padding: 1.25rem;
+  }
+
+  .project-empty-media h3 {
+    font-size: 23px;
   }
 }
