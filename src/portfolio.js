@@ -256,15 +256,22 @@ const bigProjects = {
       projectDesc: "",
       media: [
         {
-          type: "image",
-          src: require("./assets/images/projects/rocket engine nozzle 3d printed_frame.jpg"),
-          alt: "3D printed rocket engine nozzle",
+          type: "video",
+          src: require("./assets/3d_print_1.mp4"),
+          alt: "3D printing process video",
+          muted: true,
           caption: ""
         },
         {
           type: "image",
-          src: require("./assets/images/projects/uav 3d printed structure_frame.jpg"),
-          alt: "3D printed UAV structure",
+          src: require("./assets/images/projects/3d_print_2_frame.png"),
+          alt: "3D printed part close-up",
+          caption: ""
+        },
+        {
+          type: "image",
+          src: require("./assets/images/projects/3d_print_3_frame.png"),
+          alt: "3D printed part assembly",
           caption: ""
         }
       ]

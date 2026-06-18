@@ -86,7 +86,12 @@ export default function StartupProject() {
                     className="project-media-main-image"
                   ></img>
                 ) : (
-                  <video className="project-video" controls preload="metadata">
+                  <video
+                    className="project-video"
+                    controls
+                    preload="metadata"
+                    muted={Boolean(activeMedia.muted)}
+                  >
                     <source src={activeMedia.src} type="video/mp4" />
                   </video>
                 )}

@@ -91,6 +91,22 @@ npm install
 npm start
 ```
 
+## Generate Mechanical Samples PDF
+
+This repo includes a script to generate a single PDF with 2-3 mechanical work samples for job applications.
+
+```bash
+python tools/make_cdr_pdf.py
+```
+
+Output:
+- `output/CDR_Mechanical_Work_Samples.pdf`
+
+Dependencies (install once):
+```bash
+pip install reportlab pillow
+```
+
 ## Linking Portfolio to GitHub
 
 Generate a classic GitHub personal access token following these [instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic) (make sure you don't select any scope just generate a simple token). If you are using [GitHub Actions](#configuring-github-actions-recommended) to deploy your portfolio you can skip this section.
