@@ -222,7 +222,7 @@ export default function StartupProject() {
                 </div>
               ) : null}
             </div>
-            {mediaItems.length ? (
+            {mediaItems.length > 1 ? (
               <div className="project-media">
                 <div className="project-media-grid">
                   {mediaItems.map((media, mediaIndex) => {
