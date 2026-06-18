@@ -370,7 +370,15 @@ const bigProjects = {
           projectDesc:
             "System-level mechanical development involving packaged assemblies, component positioning, actuator and sensor accommodation, and design coordination across mechanical and electrical interfaces.",
           tags: ["Electromechanical", "Packaging", "Actuators", "Sensors"],
-          media: []
+          media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/generated/electromechanical-systems.svg"),
+              alt: "Electromechanical system development illustration",
+              caption:
+                "Generated visual showing electromechanical packaging, actuator, sensor, PCB, and harness integration."
+            }
+          ]
         },
         {
           id: "heat-sink-design",
@@ -503,7 +511,15 @@ const bigProjects = {
             "Mechatronics",
             "Robot mechanisms"
           ],
-          media: []
+          media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/generated/robotic-control.svg"),
+              alt: "Robotic control and electronics design illustration",
+              caption:
+                "Generated visual showing robotic control, electronics, signal traces, and control-loop behavior."
+            }
+          ]
         },
         {
           id: "exoskeleton-arm",
@@ -511,7 +527,15 @@ const bigProjects = {
           projectDesc:
             "Conceptual mechanical design direction for an exoskeleton arm, including wearable interfaces, load paths, actuator placement, and human-machine interaction constraints.",
           tags: ["Exoskeleton", "Wearable robotics", "Mechanical design"],
-          media: []
+          media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/generated/exoskeleton-arm.svg"),
+              alt: "Exoskeleton arm mechanical design illustration",
+              caption:
+                "Generated visual showing wearable arm linkages, joints, load paths, and actuator placement."
+            }
+          ]
         }
       ]
     },
@@ -527,7 +551,15 @@ const bigProjects = {
           projectDesc:
             "Machine-learning workflow using ANSYS-derived cantilever beam data to predict deformation from parameterized inputs. The model uses Python, pandas, scikit-learn, train/test validation, Random Forest regression, R2/RMSE evaluation, and actual-versus-predicted plotting.",
           tags: ["FEA data", "Machine learning", "Random Forest", "Python"],
-          media: []
+          media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/generated/fea-ml-beam-predictor.svg"),
+              alt: "FEA machine learning beam deformation predictor illustration",
+              caption:
+                "Generated visual showing FEA beam data, deformation behavior, and actual-versus-predicted ML results."
+            }
+          ]
         },
         {
           id: "stock-dashboard",
@@ -535,7 +567,15 @@ const bigProjects = {
           projectDesc:
             "FastAPI and Plotly dashboard for comparing stock time-series data across Nvidia, Intel, Tesla, and Microsoft. The project fetches market data, transforms it with pandas, and renders interactive line and pie charts for exploratory analysis.",
           tags: ["FastAPI", "Plotly", "Pandas", "EDA", "Dashboard"],
-          media: []
+          media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/generated/stock-dashboard.svg"),
+              alt: "Interactive stock data dashboard illustration",
+              caption:
+                "Generated visual showing FastAPI, Plotly, pandas, line charts, and portfolio-style market analytics."
+            }
+          ]
         },
         {
           id: "cad-webxr-automation",
@@ -543,7 +583,15 @@ const bigProjects = {
           projectDesc:
             "Automation script for converting batches of DXF geometry into GLB assets using Blender Python. The workflow supports browser/WebXR visualization by importing CAD files, normalizing scale and origin, and exporting optimized glTF models.",
           tags: ["Blender Python", "DXF", "GLB", "WebXR", "Automation"],
-          media: []
+          media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/generated/cad-webxr-automation.svg"),
+              alt: "CAD to WebXR geometry automation illustration",
+              caption:
+                "Generated visual showing DXF-to-GLB conversion for browser and WebXR-ready geometry."
+            }
+          ]
         },
         {
           id: "chatbot-automation",
@@ -551,7 +599,15 @@ const bigProjects = {
           projectDesc:
             "Chatbot and automation-oriented project direction for structured technical workflows, documentation support, and engineering knowledge retrieval.",
           tags: ["Chatbots", "Automation", "Knowledge workflows"],
-          media: []
+          media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/generated/chatbot-automation.svg"),
+              alt: "Chatbot and engineering workflow automation illustration",
+              caption:
+                "Generated visual showing chatbot-driven knowledge workflows, documentation support, and structured automation."
+            }
+          ]
         }
       ]
     }
