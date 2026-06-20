@@ -536,6 +536,56 @@ const bigProjects = {
                 "Generated visual showing wearable arm linkages, joints, load paths, and actuator placement."
             }
           ]
+        },
+        {
+          id: "robotic-exoskeleton-arm",
+          projectName:
+            "Robotic Exoskeleton Arm: CAD Design, Motion Support & Prototype Visualization",
+          projectLabel: "Robotics · Exoskeleton · CAD Concept",
+          projectHeading:
+            "Robotic exoskeleton arm for assisted upper-limb motion.",
+          projectDesc:
+            "Designed a robotic exoskeleton arm concept focused on assisted upper-limb motion, mechanical support, ergonomic structure, and actuator-ready joint interfaces. The project moved from initial concept sketching to CAD development and realistic visualization.",
+          projectDetails: [
+            "Developed the initial exoskeleton arm concept from sketch to CAD model.",
+            "Designed mechanical linkages, joint interfaces, and wearable support geometry.",
+            "Created CAD-based visualizations to communicate assembly structure and motion-support logic.",
+            "Prepared a realistic render to present the final concept in an employer-facing portfolio format."
+          ],
+          tags: [
+            "Exoskeleton",
+            "Robotics",
+            "CAD Design",
+            "Mechatronics",
+            "Wearable Mechanism",
+            "Assistive Technology"
+          ],
+          media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/exoskeleton/realistic_render.svg"),
+              alt: "Realistic render of robotic exoskeleton arm",
+              caption:
+                "Realistic visualization of the robotic exoskeleton arm concept for employer-facing portfolio presentation."
+            }
+          ],
+          gallery: [
+            {
+              src: require("./assets/images/projects/exoskeleton/sketch.svg"),
+              alt: "Initial concept sketch of robotic exoskeleton arm",
+              caption: "Concept sketch"
+            },
+            {
+              src: require("./assets/images/projects/exoskeleton/cad_model.svg"),
+              alt: "CAD model of robotic exoskeleton arm mechanism",
+              caption: "CAD mechanism model"
+            },
+            {
+              src: require("./assets/images/projects/exoskeleton/realistic_render.svg"),
+              alt: "Realistic render of robotic exoskeleton arm",
+              caption: "Realistic render"
+            }
+          ]
         }
       ]
     },

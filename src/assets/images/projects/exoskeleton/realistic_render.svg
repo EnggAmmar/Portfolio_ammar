@@ -1,0 +1,244 @@
+<svg viewBox="0 0 760 600" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <defs>
+    <!-- Studio background gradient -->
+    <radialGradient id="studioBg" cx="45%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#3a3a3a"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </radialGradient>
+    <!-- Arm skin gradient -->
+    <linearGradient id="skinGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C68642"/>
+      <stop offset="30%" stop-color="#E8A96A"/>
+      <stop offset="60%" stop-color="#D4915A"/>
+      <stop offset="100%" stop-color="#B87A45"/>
+    </linearGradient>
+    <!-- Steel rail highlight -->
+    <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#606060"/>
+      <stop offset="20%" stop-color="#E0E0E0"/>
+      <stop offset="35%" stop-color="#F8F8F8"/>
+      <stop offset="50%" stop-color="#D0D0D0"/>
+      <stop offset="75%" stop-color="#A0A0A0"/>
+      <stop offset="100%" stop-color="#585858"/>
+    </linearGradient>
+    <!-- PLA dark matte -->
+    <linearGradient id="plaBlack" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3C3C3C"/>
+      <stop offset="50%" stop-color="#252525"/>
+      <stop offset="100%" stop-color="#141414"/>
+    </linearGradient>
+    <!-- PLA highlight -->
+    <linearGradient id="plaHighlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#484848"/>
+      <stop offset="40%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#161616"/>
+    </linearGradient>
+    <!-- Servo grad -->
+    <linearGradient id="servoBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a3a3a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </linearGradient>
+    <!-- Encoder silver -->
+    <radialGradient id="encoderRad" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#E0E0E0"/>
+      <stop offset="70%" stop-color="#B0B0B0"/>
+      <stop offset="100%" stop-color="#707070"/>
+    </radialGradient>
+    <!-- Strap neoprene -->
+    <linearGradient id="strapGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#444"/>
+      <stop offset="40%" stop-color="#333"/>
+      <stop offset="100%" stop-color="#222"/>
+    </linearGradient>
+    <!-- PCB green -->
+    <linearGradient id="pcbGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a5c1a"/>
+      <stop offset="100%" stop-color="#0a3a0a"/>
+    </linearGradient>
+    <!-- floor reflection -->
+    <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e1e1e"/>
+      <stop offset="100%" stop-color="#111"/>
+    </linearGradient>
+    <!-- Key light -->
+    <radialGradient id="keyLight" cx="35%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="rgba(255,240,200,0.12)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+    <!-- Vib motor grad -->
+    <radialGradient id="vibGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#CCC"/>
+      <stop offset="100%" stop-color="#888"/>
+    </radialGradient>
+    <!-- Wire red -->
+    <!-- Wire blue -->
+  </defs>
+
+  <!-- BACKGROUND -->
+  <rect width="760" height="600" fill="url(#studioBg)"/>
+  <rect width="760" height="600" fill="url(#keyLight)"/>
+  <!-- floor shadow -->
+  <ellipse cx="380" cy="560" rx="180" ry="18" fill="rgba(0,0,0,0.5)"/>
+
+  <!-- TITLE BAR -->
+  <rect x="0" y="0" width="760" height="32" fill="rgba(0,0,0,0.6)"/>
+  <text x="380" y="21" text-anchor="middle" fill="#DDD" font-size="13" font-weight="bold" letter-spacing="1">ARM EXOSKELETON — Photorealistic Render | VR Wire Loop Game | MDP WS25/26</text>
+
+  <!-- ══════════ HUMAN ARM (background) ══════════ -->
+  <!-- Upper arm -->
+  <path d="M310,85 Q295,90 288,130 Q283,170 285,220 Q287,270 292,310" stroke="none" fill="url(#skinGrad)"/>
+  <path d="M310,85 Q325,90 330,130 Q333,170 332,220 Q330,270 327,310" stroke="none" fill="url(#skinGrad)"/>
+  <path d="M310,85 Q295,90 288,130 Q283,170 285,220 Q287,270 292,310 Q327,310 330,270 Q333,220 330,130 Q325,90 310,85 Z" fill="url(#skinGrad)"/>
+  <!-- Forearm -->
+  <path d="M292,315 Q283,320 278,360 Q274,400 276,450 Q278,480 282,510 Q310,510 315,490 Q322,460 322,420 Q323,380 320,340 Q317,320 310,315 Z" fill="url(#skinGrad)"/>
+
+  <!-- ══════════ SHOULDER MOUNT PLATE ══════════ -->
+  <rect x="272" y="72" width="76" height="18" rx="4" fill="url(#plaBlack)" stroke="#555" stroke-width="0.8"/>
+  <!-- bolts -->
+  <circle cx="282" cy="81" r="3" fill="#555" stroke="#333" stroke-width="0.5"/>
+  <circle cx="338" cy="81" r="3" fill="#555" stroke="#333" stroke-width="0.5"/>
+
+  <!-- ══════════ BALL JOINT (shoulder) ══════════ -->
+  <circle cx="310" cy="100" r="22" fill="url(#steelGrad)" stroke="#444" stroke-width="1.2"/>
+  <ellipse cx="310" cy="100" rx="22" ry="7" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="4,2"/>
+  <!-- specular highlight -->
+  <ellipse cx="303" cy="92" rx="8" ry="5" fill="rgba(255,255,255,0.35)" transform="rotate(-20,303,92)"/>
+
+  <!-- ══════════ ENCODER (shoulder) ══════════ -->
+  <circle cx="310" cy="126" r="11" fill="url(#encoderRad)" stroke="#666" stroke-width="1"/>
+  <circle cx="310" cy="126" r="4" fill="#888" stroke="#555" stroke-width="0.5"/>
+  <!-- encoder label -->
+  <line x1="322" y1="126" x2="360" y2="118" stroke="#888" stroke-width="0.6"/>
+  <text x="363" y="121" fill="#AAA" font-size="9">AS5600 encoder</text>
+
+  <!-- ══════════ SERVO BRAKE (shoulder) ══════════ -->
+  <rect x="282" y="138" width="44" height="22" rx="3" fill="url(#servoBody)" stroke="#444" stroke-width="1"/>
+  <!-- servo output horn -->
+  <ellipse cx="304" cy="138" rx="8" ry="4" fill="#404040" stroke="#555" stroke-width="0.8"/>
+  <text x="330" y="162" fill="#AAA" font-size="9">MG90S servo</text>
+
+  <!-- ══════════ STEEL RAIL — upper arm ══════════ -->
+  <!-- Left face (shadow) -->
+  <rect x="288" y="162" width="8" height="150" rx="2" fill="#505050"/>
+  <!-- Front face main rail -->
+  <rect x="296" y="162" width="28" height="150" rx="2" fill="url(#steelGrad)" stroke="#555" stroke-width="0.5"/>
+  <!-- Specular stripe -->
+  <rect x="302" y="162" width="4" height="150" fill="rgba(255,255,255,0.4)" rx="1"/>
+
+  <!-- ══════════ PLA CARRIAGE — upper arm (q4) ══════════ -->
+  <rect x="276" y="228" width="68" height="30" rx="4" fill="url(#plaHighlight)" stroke="#555" stroke-width="1"/>
+  <!-- edge highlight -->
+  <line x1="277" y1="229" x2="343" y2="229" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <!-- thumb screw -->
+  <circle cx="346" cy="243" r="5" fill="#505050" stroke="#333" stroke-width="0.8"/>
+  <!-- label -->
+  <line x1="276" y1="243" x2="238" y2="243" stroke="#888" stroke-width="0.6"/>
+  <text x="235" y="246" text-anchor="end" fill="#AAA" font-size="9">Linear carriage (q₄)</text>
+
+  <!-- ══════════ VIBRATION MOTORS — upper arm ══════════ -->
+  <ellipse cx="348" cy="190" rx="6" ry="4" fill="url(#vibGrad)" stroke="#666" stroke-width="0.8"/>
+  <ellipse cx="348" cy="220" rx="6" ry="4" fill="url(#vibGrad)" stroke="#666" stroke-width="0.8"/>
+  <ellipse cx="348" cy="280" rx="6" ry="4" fill="url(#vibGrad)" stroke="#666" stroke-width="0.8"/>
+  <ellipse cx="348" cy="300" rx="6" ry="4" fill="url(#vibGrad)" stroke="#666" stroke-width="0.8"/>
+
+  <!-- ══════════ UPPER ARM STRAP ══════════ -->
+  <path d="M268,248 Q250,250 252,264 Q252,272 268,273" fill="url(#strapGrad)" stroke="#555" stroke-width="0.8"/>
+  <path d="M352,248 Q370,250 368,264 Q368,272 352,273" fill="url(#strapGrad)" stroke="#555" stroke-width="0.8"/>
+  <!-- velcro texture lines -->
+  <line x1="253" y1="255" x2="268" y2="255" stroke="#444" stroke-width="0.5"/>
+  <line x1="253" y1="260" x2="268" y2="260" stroke="#444" stroke-width="0.5"/>
+  <line x1="253" y1="265" x2="268" y2="265" stroke="#444" stroke-width="0.5"/>
+  <text x="245" y="286" text-anchor="end" fill="#AAA" font-size="9">Neoprene strap</text>
+  <text x="245" y="296" text-anchor="end" fill="#AAA" font-size="9">w/ velcro</text>
+
+  <!-- ══════════ ELBOW HINGE ══════════ -->
+  <rect x="272" y="314" width="76" height="20" rx="5" fill="url(#plaBlack)" stroke="#555" stroke-width="1"/>
+  <!-- hinge pin -->
+  <ellipse cx="310" cy="324" rx="14" ry="6" fill="url(#steelGrad)" stroke="#555" stroke-width="1"/>
+  <ellipse cx="303" cy="320" rx="5" ry="3" fill="rgba(255,255,255,0.3)" transform="rotate(-15,303,320)"/>
+  <text x="355" y="328" fill="#AAA" font-size="9">Elbow hinge (q₅)</text>
+
+  <!-- Encoder elbow -->
+  <circle cx="310" cy="338" r="9" fill="url(#encoderRad)" stroke="#666" stroke-width="1"/>
+  <circle cx="310" cy="338" r="3" fill="#888" stroke="#555" stroke-width="0.5"/>
+
+  <!-- Servo brake elbow -->
+  <rect x="284" y="348" width="38" height="18" rx="3" fill="url(#servoBody)" stroke="#444" stroke-width="1"/>
+
+  <!-- ══════════ STEEL RAIL — forearm ══════════ -->
+  <rect x="288" y="368" width="8" height="130" rx="2" fill="#505050"/>
+  <rect x="296" y="368" width="28" height="130" rx="2" fill="url(#steelGrad)" stroke="#555" stroke-width="0.5"/>
+  <rect x="302" y="368" width="4" height="130" fill="rgba(255,255,255,0.4)" rx="1"/>
+
+  <!-- ══════════ PLA CARRIAGE — forearm (q6) ══════════ -->
+  <rect x="276" y="420" width="68" height="28" rx="4" fill="url(#plaHighlight)" stroke="#555" stroke-width="1"/>
+  <line x1="277" y1="421" x2="343" y2="421" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <circle cx="346" cy="434" r="5" fill="#505050" stroke="#333" stroke-width="0.8"/>
+  <line x1="276" y1="434" x2="238" y2="434" stroke="#888" stroke-width="0.6"/>
+  <text x="235" y="437" text-anchor="end" fill="#AAA" font-size="9">Forearm carriage (q₆)</text>
+
+  <!-- ══════════ VIBRATION MOTORS — forearm ══════════ -->
+  <ellipse cx="348" cy="382" rx="6" ry="4" fill="url(#vibGrad)" stroke="#666" stroke-width="0.8"/>
+  <ellipse cx="348" cy="408" rx="6" ry="4" fill="url(#vibGrad)" stroke="#666" stroke-width="0.8"/>
+  <ellipse cx="348" cy="460" rx="6" ry="4" fill="url(#vibGrad)" stroke="#666" stroke-width="0.8"/>
+  <ellipse cx="348" cy="485" rx="6" ry="4" fill="url(#vibGrad)" stroke="#666" stroke-width="0.8"/>
+
+  <!-- ══════════ FOREARM STRAP ══════════ -->
+  <path d="M268,434 Q250,436 252,448 Q252,456 268,457" fill="url(#strapGrad)" stroke="#555" stroke-width="0.8"/>
+  <path d="M352,434 Q370,436 368,448 Q368,456 352,457" fill="url(#strapGrad)" stroke="#555" stroke-width="0.8"/>
+
+  <!-- ══════════ WRIST JOINT ══════════ -->
+  <rect x="278" y="500" width="64" height="16" rx="4" fill="url(#plaBlack)" stroke="#555" stroke-width="1"/>
+  <ellipse cx="310" cy="508" rx="12" ry="5" fill="url(#steelGrad)" stroke="#555" stroke-width="1"/>
+  <ellipse cx="304" cy="504" rx="4" ry="2.5" fill="rgba(255,255,255,0.28)" transform="rotate(-10,304,504)"/>
+  <text x="348" y="512" fill="#AAA" font-size="9">Wrist (q₇)</text>
+  <!-- Encoder wrist -->
+  <circle cx="310" cy="520" r="8" fill="url(#encoderRad)" stroke="#666" stroke-width="1"/>
+  <circle cx="310" cy="520" r="3" fill="#888" stroke="#555" stroke-width="0.5"/>
+
+  <!-- ══════════ WIRING HARNESS ══════════ -->
+  <!-- Red power wire -->
+  <path d="M348,162 Q380,180 390,250 Q395,310 388,370 Q382,410 372,460" fill="none" stroke="#CC2222" stroke-width="2" stroke-dasharray="none"/>
+  <!-- Blue data wire -->
+  <path d="M347,165 Q378,185 388,255 Q393,315 386,375 Q380,415 370,462" fill="none" stroke="#2244CC" stroke-width="1.5"/>
+  <!-- PCB board -->
+  <rect x="356" y="200" width="42" height="28" rx="2" fill="url(#pcbGrad)" stroke="#0a3a0a" stroke-width="1"/>
+  <!-- chips on PCB -->
+  <rect x="360" y="205" width="14" height="10" fill="#111" stroke="#000" stroke-width="0.5"/>
+  <rect x="378" y="205" width="10" height="8" fill="#222" stroke="#000" stroke-width="0.5"/>
+  <!-- PCB label -->
+  <line x1="398" y1="214" x2="430" y2="210" stroke="#888" stroke-width="0.6"/>
+  <text x="432" y="213" fill="#AAA" font-size="9">ESP-S30 MCU</text>
+
+  <!-- ══════════ PRODUCT LABEL / BRANDING ══════════ -->
+  <rect x="556" y="60" width="170" height="180" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="641" y="82" text-anchor="middle" fill="#CCC" font-size="12" font-weight="bold">COMPONENTS</text>
+  <line x1="566" y1="88" x2="716" y2="88" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+  <!-- items -->
+  <circle cx="572" cy="104" r="4" fill="url(#steelGrad)" stroke="#666" stroke-width="0.8"/>
+  <text x="582" y="108" fill="#AAA" font-size="10">Steel rail 8mm Ø (high-prec.)</text>
+  <rect x="568" y="118" width="8" height="8" rx="1" fill="url(#plaHighlight)" stroke="#555" stroke-width="0.5"/>
+  <text x="582" y="126" fill="#AAA" font-size="10">PLA 3D-printed parts</text>
+  <rect x="568" y="134" width="8" height="8" rx="1" fill="url(#servoBody)" stroke="#444" stroke-width="0.5"/>
+  <text x="582" y="142" fill="#AAA" font-size="10">7× MG90S servo brakes</text>
+  <circle cx="572" cy="158" r="4" fill="url(#encoderRad)" stroke="#666" stroke-width="0.8"/>
+  <text x="582" y="162" fill="#AAA" font-size="10">7× AS5600 encoders</text>
+  <ellipse cx="572" cy="177" rx="5" ry="3" fill="url(#vibGrad)" stroke="#666" stroke-width="0.8"/>
+  <text x="582" y="181" fill="#AAA" font-size="10">24× vibration motors</text>
+  <rect x="568" y="191" width="8" height="8" rx="1" fill="url(#pcbGrad)" stroke="#0a3a0a" stroke-width="0.5"/>
+  <text x="582" y="199" fill="#AAA" font-size="10">3× ESP-S30 MCU boards</text>
+  <rect x="568" y="208" width="8" height="8" rx="1" fill="url(#strapGrad)" stroke="#555" stroke-width="0.5"/>
+  <text x="582" y="216" fill="#AAA" font-size="10">Neoprene straps + velcro</text>
+
+  <!-- SPECS BLOCK -->
+  <rect x="556" y="258" width="170" height="100" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="641" y="278" text-anchor="middle" fill="#CCC" font-size="12" font-weight="bold">SPECS</text>
+  <line x1="566" y1="284" x2="716" y2="284" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+  <text x="566" y="300" fill="#AAA" font-size="10">Weight: ~2 kg</text>
+  <text x="566" y="315" fill="#AAA" font-size="10">DOF: 7 active + passive</text>
+  <text x="566" y="330" fill="#AAA" font-size="10">Resolution: ±3.6 mm max</text>
+  <text x="566" y="345" fill="#AAA" font-size="10">Total cost: ~€328</text>
+
+  <!-- Floor reflection faint -->
+  <ellipse cx="310" cy="556" rx="80" ry="10" fill="rgba(200,180,150,0.06)"/>
+</svg>

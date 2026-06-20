@@ -175,6 +175,8 @@ export default function StartupProject() {
                       `${selectedProject.projectName} selected`
                     }
                     className="project-media-main-image"
+                    loading="lazy"
+                    decoding="async"
                   ></img>
                 ) : (
                   <video
@@ -203,6 +205,16 @@ export default function StartupProject() {
               </div>
             )}
             <div className="project-content">
+              {selectedProject.projectLabel ? (
+                <p className="project-card-label">
+                  {selectedProject.projectLabel}
+                </p>
+              ) : null}
+              {selectedProject.projectHeading ? (
+                <h3 className="project-card-title">
+                  {selectedProject.projectHeading}
+                </h3>
+              ) : null}
               <p
                 className={
                   isDark
@@ -212,12 +224,35 @@ export default function StartupProject() {
               >
                 {selectedProject.projectDesc}
               </p>
+              {selectedProject.projectDetails &&
+              selectedProject.projectDetails.length ? (
+                <ul className="project-detail-list">
+                  {selectedProject.projectDetails.map(detail => (
+                    <li key={detail}>{detail}</li>
+                  ))}
+                </ul>
+              ) : null}
               {selectedProject.tags && selectedProject.tags.length ? (
                 <div className="project-tag-list">
                   {selectedProject.tags.map(tag => (
                     <span className="project-tag" key={tag}>
                       {tag}
                     </span>
+                  ))}
+                </div>
+              ) : null}
+              {selectedProject.gallery && selectedProject.gallery.length ? (
+                <div className="project-gallery">
+                  {selectedProject.gallery.map(item => (
+                    <figure key={item.caption}>
+                      <img
+                        src={getMediaSrc(item)}
+                        alt={item.alt}
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <figcaption>{item.caption}</figcaption>
+                    </figure>
                   ))}
                 </div>
               ) : null}
@@ -248,6 +283,8 @@ export default function StartupProject() {
                               }`
                             }
                             className="project-media-image"
+                            loading="lazy"
+                            decoding="async"
                           ></img>
                         ) : (
                           <div className="project-media-video-thumb">
