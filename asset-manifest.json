@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio_ammar/static/css/main.f0e219f9.css",
-    "main.js": "/Portfolio_ammar/static/js/main.6a2ed362.js",
+    "main.css": "/Portfolio_ammar/static/css/main.b257cf32.css",
+    "main.js": "/Portfolio_ammar/static/js/main.b1340de5.js",
     "static/css/64.386cb6fa.chunk.css": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css",
@@ -41,9 +41,12 @@
     "static/media/contactMailDark.svg": "/Portfolio_ammar/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/Portfolio_ammar/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
     "static/media/easyeda-thumbnail.png": "/Portfolio_ammar/static/media/easyeda-thumbnail.6f6dc1ef2ed26b157a2d.png",
+    "static/media/realistic_render.svg": "/Portfolio_ammar/static/media/realistic_render.019dc6a5097ce6887e2a9ea7febc6995.svg",
     "static/media/nastp.jpg": "/Portfolio_ammar/static/media/nastp.baf15a2de7bed893f068.jpg",
     "static/media/nust.png": "/Portfolio_ammar/static/media/nust.31a7b609f35048195b91.png",
     "static/media/solidworks.png": "/Portfolio_ammar/static/media/solidworks.7e7b543a2484b5e8b4e5.png",
+    "static/media/sketch.svg": "/Portfolio_ammar/static/media/sketch.0e230675649abc1e3e3e09858a263df8.svg",
+    "static/media/cad_model.svg": "/Portfolio_ammar/static/media/cad_model.f63c0e7a038df3a807128e1314ce88b0.svg",
     "static/media/ansys.png": "/Portfolio_ammar/static/media/ansys.da5d81c06524e774f43d.png",
     "static/media/skill.svg": "/Portfolio_ammar/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "static/media/chatbot-automation.svg": "/Portfolio_ammar/static/media/chatbot-automation.12a9361ea2ad01f79f9a7ad96bd1da31.svg",
@@ -55,15 +58,15 @@
     "static/media/exoskeleton-arm.svg": "/Portfolio_ammar/static/media/exoskeleton-arm.85db0af35d2c4aba8ba38f9592d617ce.svg",
     "static/media/electromechanical-systems.svg": "/Portfolio_ammar/static/media/electromechanical-systems.1cdab55af0816d2fdaae9123e88ec628.svg",
     "static/media/talksCardBack.svg": "/Portfolio_ammar/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.f0e219f9.css.map": "/Portfolio_ammar/static/css/main.f0e219f9.css.map",
-    "main.6a2ed362.js.map": "/Portfolio_ammar/static/js/main.6a2ed362.js.map",
+    "main.b257cf32.css.map": "/Portfolio_ammar/static/css/main.b257cf32.css.map",
+    "main.b1340de5.js.map": "/Portfolio_ammar/static/js/main.b1340de5.js.map",
     "64.386cb6fa.chunk.css.map": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css.map",
     "769.0db0762a.chunk.js.map": "/Portfolio_ammar/static/js/769.0db0762a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0e219f9.css",
-    "static/js/main.6a2ed362.js"
+    "static/css/main.b257cf32.css",
+    "static/js/main.b1340de5.js"
   ]
 }
