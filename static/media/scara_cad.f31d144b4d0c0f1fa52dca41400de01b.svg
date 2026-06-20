@@ -1,0 +1,195 @@
+<svg viewBox="0 0 820 620" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" font-size="11">
+  <defs>
+    <!-- Isometric gradients for CAD look -->
+    <linearGradient id="alTop" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E8E8E8"/><stop offset="100%" stop-color="#C0C0C0"/></linearGradient>
+    <linearGradient id="alFront" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#D0D0D0"/><stop offset="100%" stop-color="#A0A0A0"/></linearGradient>
+    <linearGradient id="alSide" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#B8B8B8"/><stop offset="100%" stop-color="#808080"/></linearGradient>
+    <linearGradient id="steelG" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#A0A0A0"/><stop offset="25%" stop-color="#E8E8E8"/><stop offset="50%" stop-color="#F4F4F4"/><stop offset="75%" stop-color="#D0D0D0"/><stop offset="100%" stop-color="#888"/></linearGradient>
+    <linearGradient id="motorG" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#484848"/><stop offset="100%" stop-color="#1a1a1a"/></linearGradient>
+    <linearGradient id="baseG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#D0D0D0"/><stop offset="100%" stop-color="#888"/></linearGradient>
+    <linearGradient id="pcbG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a5c1a"/><stop offset="100%" stop-color="#0a3a0a"/></linearGradient>
+    <radialGradient id="jointSphere" cx="35%" cy="30%" r="65%"><stop offset="0%" stop-color="#F0F0F0"/><stop offset="60%" stop-color="#C0C0C0"/><stop offset="100%" stop-color="#808080"/></radialGradient>
+  </defs>
+
+  <rect width="820" height="620" fill="#1E1E22"/>
+  <!-- Studio bg gradient -->
+  <radialGradient id="bgRad" cx="45%" cy="40%" r="65%"><stop offset="0%" stop-color="#2E2E35"/><stop offset="100%" stop-color="#111116"/></radialGradient>
+  <rect width="820" height="620" fill="url(#bgRad)"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="820" height="32" fill="rgba(0,0,0,0.55)"/>
+  <text x="410" y="21" text-anchor="middle" fill="#DDD" font-size="13" font-weight="bold" letter-spacing="0.5">SCARA 3-DOF Robot Arm (RRP) — CAD Isometric Render | Aluminium + Steel</text>
+
+  <!-- ═══════════ BASE COLUMN (isometric) ═══════════ -->
+  <!-- Base plate top -->
+  <polygon points="280,540 430,540 460,555 310,555" fill="#C8C8C8" stroke="#888" stroke-width="0.8"/>
+  <!-- Base plate front -->
+  <polygon points="310,555 460,555 460,572 310,572" fill="#A8A8A8" stroke="#888" stroke-width="0.8"/>
+  <!-- Base plate side -->
+  <polygon points="430,540 460,555 460,572 430,557" fill="#909090" stroke="#888" stroke-width="0.8"/>
+  <!-- Bolts on base -->
+  <ellipse cx="318" cy="550" rx="5" ry="2.5" fill="#888" stroke="#666" stroke-width="0.5"/>
+  <ellipse cx="448" cy="550" rx="5" ry="2.5" fill="#888" stroke="#666" stroke-width="0.5"/>
+  <ellipse cx="318" cy="563" rx="5" ry="2.5" fill="#888" stroke="#666" stroke-width="0.5"/>
+  <ellipse cx="448" cy="563" rx="5" ry="2.5" fill="#888" stroke="#666" stroke-width="0.5"/>
+
+  <!-- Column body -->
+  <!-- Front face -->
+  <polygon points="330,440 390,440 390,540 330,540" fill="url(#alFront)" stroke="#777" stroke-width="0.8"/>
+  <!-- Top face -->
+  <polygon points="318,430 408,430 390,440 330,440" fill="url(#alTop)" stroke="#777" stroke-width="0.8"/>
+  <!-- Side face -->
+  <polygon points="408,430 390,440 390,540 408,530" fill="url(#alSide)" stroke="#777" stroke-width="0.8"/>
+  <!-- Column centerline -->
+  <line x1="360" y1="430" x2="360" y2="540" stroke="#aaa" stroke-width="0.5" stroke-dasharray="6,4"/>
+
+  <!-- ═══════════ SERVO MOTOR 1 at base (Joint 1) ═══════════ -->
+  <!-- Motor cylinder -->
+  <ellipse cx="360" cy="428" rx="32" ry="12" fill="#555" stroke="#444" stroke-width="0.8"/>
+  <polygon points="328,380 392,380 392,428 328,428" fill="url(#motorG)" stroke="#333" stroke-width="0.8"/>
+  <ellipse cx="360" cy="380" rx="32" ry="12" fill="#484848" stroke="#333" stroke-width="0.8"/>
+  <!-- Motor shaft -->
+  <ellipse cx="360" cy="376" rx="8" ry="4" fill="url(#steelG)" stroke="#666" stroke-width="0.8"/>
+  <!-- Motor fins -->
+  <line x1="328" y1="396" x2="392" y2="396" stroke="#3a3a3a" stroke-width="1.5"/>
+  <line x1="328" y1="408" x2="392" y2="408" stroke="#3a3a3a" stroke-width="1.5"/>
+  <!-- Label -->
+  <line x1="394" y1="404" x2="430" y2="398" stroke="#888" stroke-width="0.6"/>
+  <text x="432" y="401" fill="#BBB" font-size="9">Servo Motor J1</text>
+
+  <!-- ═══════════ JOINT 1 HOUSING ═══════════ -->
+  <ellipse cx="360" cy="370" rx="26" ry="10" fill="url(#jointSphere)" stroke="#888" stroke-width="1"/>
+  <!-- specular -->
+  <ellipse cx="352" cy="364" rx="9" ry="4" fill="rgba(255,255,255,0.35)" transform="rotate(-15,352,364)"/>
+  <text x="290" y="368" fill="#BBB" font-size="10" text-anchor="end">Joint 1 (θ₁)</text>
+  <text x="290" y="379" fill="#888" font-size="9" text-anchor="end">Revolute</text>
+
+  <!-- ═══════════ LINK 1 — UPPER ARM (isometric) ═══════════ -->
+  <!-- Top face -->
+  <polygon points="360,348 520,348 532,358 372,358" fill="url(#alTop)" stroke="#777" stroke-width="0.8"/>
+  <!-- Front face -->
+  <polygon points="372,358 532,358 532,376 372,376" fill="url(#alFront)" stroke="#777" stroke-width="0.8"/>
+  <!-- Side (end cap) -->
+  <polygon points="520,348 532,358 532,376 520,366" fill="url(#alSide)" stroke="#777" stroke-width="0.8"/>
+  <!-- Link 1 centerline -->
+  <line x1="362" y1="363" x2="530" y2="363" stroke="#aaa" stroke-width="0.5" stroke-dasharray="6,4"/>
+  <!-- Encoder disc on link 1 top -->
+  <ellipse cx="420" cy="348" rx="12" ry="5" fill="#404040" stroke="#555" stroke-width="0.8"/>
+  <ellipse cx="420" cy="348" rx="5" ry="2" fill="#666" stroke="#444" stroke-width="0.5"/>
+  <line x1="420" y1="353" x2="430" y2="340" stroke="#888" stroke-width="0.6"/>
+  <text x="432" y="339" fill="#AAA" font-size="9">Encoder J1</text>
+
+  <!-- ═══════════ SERVO MOTOR 2 (Joint 2) ═══════════ -->
+  <polygon points="508,310 562,310 562,360 508,360" fill="url(#motorG)" stroke="#333" stroke-width="0.8"/>
+  <ellipse cx="535" cy="310" rx="27" ry="9" fill="#484848" stroke="#333" stroke-width="0.8"/>
+  <ellipse cx="535" cy="360" rx="27" ry="9" fill="#555" stroke="#444" stroke-width="0.8"/>
+  <line x1="508" y1="326" x2="562" y2="326" stroke="#3a3a3a" stroke-width="1.5"/>
+  <line x1="508" y1="344" x2="562" y2="344" stroke="#3a3a3a" stroke-width="1.5"/>
+  <line x1="564" y1="335" x2="600" y2="330" stroke="#888" stroke-width="0.6"/>
+  <text x="602" y="333" fill="#BBB" font-size="9">Servo Motor J2</text>
+
+  <!-- ═══════════ JOINT 2 HOUSING ═══════════ -->
+  <ellipse cx="535" cy="305" rx="22" ry="8" fill="url(#jointSphere)" stroke="#888" stroke-width="1"/>
+  <ellipse cx="529" cy="300" rx="7" ry="3.5" fill="rgba(255,255,255,0.3)" transform="rotate(-15,529,300)"/>
+  <text x="505" y="295" text-anchor="end" fill="#BBB" font-size="10">Joint 2 (θ₂)</text>
+  <text x="505" y="306" text-anchor="end" fill="#888" font-size="9">Revolute</text>
+
+  <!-- ═══════════ LINK 2 — FOREARM ═══════════ -->
+  <!-- (angled slightly for 3D effect, going toward viewer-left) -->
+  <polygon points="535,292 640,280 650,290 545,302" fill="url(#alTop)" stroke="#777" stroke-width="0.8"/>
+  <polygon points="545,302 650,290 650,306 545,318" fill="url(#alFront)" stroke="#777" stroke-width="0.8"/>
+  <polygon points="640,280 650,290 650,306 640,296" fill="url(#alSide)" stroke="#777" stroke-width="0.8"/>
+  <!-- Encoder J2 -->
+  <ellipse cx="590" cy="286" rx="10" ry="4" fill="#404040" stroke="#555" stroke-width="0.8"/>
+  <line x1="590" y1="290" x2="600" y2="276" stroke="#888" stroke-width="0.6"/>
+  <text x="602" y="275" fill="#AAA" font-size="9">Encoder J2</text>
+
+  <!-- ═══════════ JOINT 3 — PRISMATIC (Z-slide) ═══════════ -->
+  <!-- Z column housing -->
+  <polygon points="625,190 665,190 672,198 632,198" fill="url(#alTop)" stroke="#777" stroke-width="0.8"/>
+  <polygon points="632,198 672,198 672,305 632,305" fill="url(#alFront)" stroke="#777" stroke-width="0.8"/>
+  <polygon points="665,190 672,198 672,305 665,297" fill="url(#alSide)" stroke="#777" stroke-width="0.8"/>
+  <!-- Rail tubes inside -->
+  <line x1="638" y1="198" x2="638" y2="305" stroke="url(#steelG)" stroke-width="4"/>
+  <line x1="660" y1="198" x2="660" y2="305" stroke="url(#steelG)" stroke-width="4"/>
+  <!-- Slider carriage -->
+  <polygon points="618,235 678,235 685,244 625,244" fill="#B0B0B0" stroke="#888" stroke-width="0.8"/>
+  <polygon points="625,244 685,244 685,264 625,264" fill="#C8C8C8" stroke="#888" stroke-width="0.8"/>
+  <polygon points="678,235 685,244 685,264 678,255" fill="#A0A0A0" stroke="#888" stroke-width="0.8"/>
+  <!-- linear encoder strip -->
+  <rect x="673" y="198" width="6" height="107" fill="#333" stroke="#222" stroke-width="0.5"/>
+  <line x1="676" y1="215" x2="676" y2="305" stroke="#555" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <!-- Z arrows -->
+  <line x1="696" y1="198" x2="696" y2="305" stroke="#AAA" stroke-width="1.2"/>
+  <polygon points="692,203 696,193 700,203" fill="#AAA"/>
+  <polygon points="692,300 696,310 700,300" fill="#AAA"/>
+  <text x="702" y="255" fill="#AAA" font-size="9" font-weight="bold">d₃</text>
+  <text x="702" y="266" fill="#AAA" font-size="9">0–200 mm</text>
+  <text x="620" y="182" text-anchor="middle" fill="#BBB" font-size="10">Joint 3</text>
+  <text x="620" y="172" text-anchor="middle" fill="#888" font-size="9">Prismatic (Z)</text>
+
+  <!-- ═══════════ END-EFFECTOR ═══════════ -->
+  <!-- Mounting flange -->
+  <polygon points="616,182 680,182 686,190 622,190" fill="#D0D0D0" stroke="#999" stroke-width="0.8"/>
+  <polygon points="622,190 686,190 686,200 622,200" fill="#B8B8B8" stroke="#999" stroke-width="0.8"/>
+  <!-- Gripper body -->
+  <polygon points="626,160 672,160 678,168 632,168" fill="#C0C0C0" stroke="#999" stroke-width="0.8"/>
+  <polygon points="632,168 678,168 678,182 632,182" fill="#A8A8A8" stroke="#999" stroke-width="0.8"/>
+  <!-- Fingers -->
+  <rect x="628" y="140" width="12" height="20" rx="2" fill="#909090" stroke="#777" stroke-width="0.8"/>
+  <rect x="660" y="140" width="12" height="20" rx="2" fill="#909090" stroke="#777" stroke-width="0.8"/>
+  <!-- specular on fingers -->
+  <rect x="630" y="141" width="3" height="16" rx="1" fill="rgba(255,255,255,0.25)"/>
+  <rect x="662" y="141" width="3" height="16" rx="1" fill="rgba(255,255,255,0.25)"/>
+  <line x1="680" y1="165" x2="720" y2="150" stroke="#888" stroke-width="0.6"/>
+  <text x="722" y="153" fill="#BBB" font-size="10">End-effector</text>
+  <text x="722" y="163" fill="#888" font-size="9">(parallel gripper)</text>
+
+  <!-- ═══════════ CONTROLLER / PCB ═══════════ -->
+  <polygon points="135,400 225,400 232,408 142,408" fill="url(#pcbG)" stroke="#0a3a0a" stroke-width="0.8"/>
+  <polygon points="142,408 232,408 232,468 142,468" fill="#1e6e1e" stroke="#0a3a0a" stroke-width="0.8"/>
+  <polygon points="225,400 232,408 232,468 225,460" fill="#145014" stroke="#0a3a0a" stroke-width="0.8"/>
+  <!-- chips -->
+  <rect x="150" y="415" width="22" height="16" fill="#111" stroke="#000" stroke-width="0.5"/>
+  <rect x="180" y="415" width="18" height="14" fill="#222" stroke="#000" stroke-width="0.5"/>
+  <rect x="150" y="438" width="30" height="12" fill="#333" stroke="#000" stroke-width="0.5"/>
+  <rect x="188" y="438" width="16" height="12" fill="#111" stroke="#000" stroke-width="0.5"/>
+  <!-- pin headers -->
+  <rect x="152" y="460" width="70" height="4" fill="#FFD700" stroke="#DAA520" stroke-width="0.3"/>
+  <text x="183" y="482" text-anchor="middle" fill="#AAA" font-size="10">Arduino Mega</text>
+  <text x="183" y="493" text-anchor="middle" fill="#888" font-size="9">+ PID Library</text>
+
+  <!-- Wiring from controller to motors -->
+  <path d="M232,434 Q290,430 328,405" fill="none" stroke="#CC2222" stroke-width="1.8"/>
+  <path d="M232,438 Q290,436 328,408" fill="none" stroke="#2244CC" stroke-width="1.5"/>
+  <path d="M232,440 Q320,450 508,335" fill="none" stroke="#CC2222" stroke-width="1.5" stroke-dasharray="none"/>
+  <path d="M232,443 Q325,454 508,338" fill="none" stroke="#2244CC" stroke-width="1.3"/>
+  <text x="270" y="428" fill="#888" font-size="9">PWM signals</text>
+
+  <!-- ═══════════ SPEC PANEL ═══════════ -->
+  <rect x="30" y="44" width="200" height="200" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="0.8"/>
+  <text x="130" y="64" text-anchor="middle" fill="#CCC" font-size="12" font-weight="bold">SPECIFICATIONS</text>
+  <line x1="40" y1="70" x2="220" y2="70" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+  <text x="40" y="86"  fill="#AAA" font-size="10">DOF:         3 (RRP — SCARA)</text>
+  <text x="40" y="101" fill="#AAA" font-size="10">Reach:       500 mm (R)</text>
+  <text x="40" y="116" fill="#AAA" font-size="10">Stroke:      200 mm (Z)</text>
+  <text x="40" y="131" fill="#AAA" font-size="10">Link 1:      300 mm (Al 6061)</text>
+  <text x="40" y="146" fill="#AAA" font-size="10">Link 2:      200 mm (Al 6061)</text>
+  <text x="40" y="161" fill="#AAA" font-size="10">Actuators:   DC servo + ballscrew</text>
+  <text x="40" y="176" fill="#AAA" font-size="10">Sensors:     Optical encoder ×3</text>
+  <text x="40" y="191" fill="#AAA" font-size="10">Controller:  Arduino Mega + PID</text>
+  <text x="40" y="206" fill="#AAA" font-size="10">Sim:         MATLAB / Simulink</text>
+  <text x="40" y="221" fill="#AAA" font-size="10">Payload:     ~0.5 kg</text>
+
+  <!-- PID summary panel -->
+  <rect x="30" y="258" width="200" height="95" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="0.8"/>
+  <text x="130" y="276" text-anchor="middle" fill="#CCC" font-size="11" font-weight="bold">PID GAINS</text>
+  <line x1="40" y1="282" x2="220" y2="282" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+  <text x="40" y="297" fill="#AAA" font-size="10">J1 (θ₁):  Kp=1.8  Ki=0.4  Kd=0.7</text>
+  <text x="40" y="312" fill="#AAA" font-size="10">J2 (θ₂):  Kp=2.0  Ki=0.5  Kd=0.8</text>
+  <text x="40" y="327" fill="#AAA" font-size="10">J3 (d₃):  Kp=2.2  Ki=0.3  Kd=1.0</text>
+  <text x="40" y="342" fill="#888" font-size="9">Tuned in Simulink PID Tuner</text>
+
+  <!-- Floor shadow -->
+  <ellipse cx="450" cy="575" rx="220" ry="14" fill="rgba(0,0,0,0.35)"/>
+</svg>
