@@ -502,22 +502,41 @@ const bigProjects = {
       projects: [
         {
           id: "robotic-control",
-          projectName: "Robotic Control & Electronics Design",
+          projectName:
+            "SCARA-Style RRP Robot Arm: Mechatronic Design & PID Simulation",
           projectDesc:
-            "Robotics-focused work covering control design, electronics schematic planning, mechatronic component selection, robot mechanism studies, and integration thinking for actuation-driven systems.",
+            "Designed and simulated a SCARA-style RRP robot arm concept focused on mechatronic architecture, revolute-revolute-prismatic motion, CAD-based mechanism layout, and PID control behavior. The project combines mechanical structure planning with control-loop simulation and dashboard-style response visualization.",
           tags: [
-            "Control design",
-            "Schematics",
+            "SCARA robot",
+            "RRP mechanism",
+            "PID simulation",
             "Mechatronics",
-            "Robot mechanisms"
+            "CAD Design"
           ],
           media: [
             {
               type: "image",
-              src: require("./assets/images/projects/generated/robotic-control.svg"),
-              alt: "Robotic control and electronics design illustration",
+              src: require("./assets/images/projects/scara-robot/scara_cad.svg"),
+              alt: "CAD model of SCARA-style RRP robot arm",
+              contain: true,
               caption:
-                "Generated visual showing robotic control, electronics, signal traces, and control-loop behavior."
+                "CAD-style visualization of the SCARA RRP robot arm mechanism and joint layout."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/scara-robot/pid_dashboard.png"),
+              alt: "PID simulation dashboard for SCARA-style robot arm",
+              contain: true,
+              caption:
+                "PID simulation dashboard showing control response behavior for the robot arm concept."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/scara-robot/scara_sketch.svg"),
+              alt: "Concept sketch of SCARA-style RRP robot arm",
+              contain: true,
+              caption:
+                "Initial SCARA-style RRP robot arm sketch used to define the mechanism concept."
             }
           ]
         },
