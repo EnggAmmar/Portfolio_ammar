@@ -676,17 +676,81 @@ const bigProjects = {
         },
         {
           id: "cad-webxr-automation",
-          projectName: "CAD to WebXR Geometry Automation",
+          projectName: "MRI Signal Processing and Artifact Reduction Pipeline",
           projectDesc:
-            "Automation script for converting batches of DXF geometry into GLB assets using Blender Python. The workflow supports browser/WebXR visualization by importing CAD files, normalizing scale and origin, and exporting optimized glTF models.",
-          tags: ["Blender Python", "DXF", "GLB", "WebXR", "Automation"],
+            "Built a reproducible MRI preprocessing workflow that loads a 3D T1-weighted NIfTI volume, extracts an anatomical slice, simulates 60 Hz scanner or powerline noise, applies frequency-domain filtering, removes baseline trends, downsamples the image, applies median artifact reduction, and normalizes the final result for visualization.",
+          tags: [
+            "Python",
+            "NumPy",
+            "SciPy",
+            "FFT",
+            "NIfTI",
+            "MRI preprocessing"
+          ],
           media: [
             {
               type: "image",
-              src: require("./assets/images/projects/generated/cad-webxr-automation.svg"),
-              alt: "CAD to WebXR geometry automation illustration",
+              src: require("./assets/images/projects/mri-processing/01_mri_portfolio_hero.png"),
+              alt: "MRI signal processing before and after portfolio hero",
+              contain: true,
               caption:
-                "Generated visual showing DXF-to-GLB conversion for browser and WebXR-ready geometry."
+                "Before-and-after MRI preprocessing result showing raw, noisy, and cleaned slice output."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/mri-processing/02_processing_step_montage.png"),
+              alt: "MRI processing step montage",
+              contain: true,
+              caption:
+                "Step-by-step montage of the MRI preprocessing and artifact reduction pipeline."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/mri-processing/03_frequency_domain_analysis.png"),
+              alt: "MRI frequency domain analysis",
+              contain: true,
+              caption:
+                "Fourier-domain analysis used to explain frequency filtering behavior."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/mri-processing/04_orthogonal_mri_views.png"),
+              alt: "Orthogonal MRI anatomical views",
+              contain: true,
+              caption:
+                "Axial, coronal, and sagittal MRI views used for anatomical context."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/mri-processing/05_technical_workflow_diagram.png"),
+              alt: "MRI signal processing technical workflow diagram",
+              contain: true,
+              caption:
+                "Technical workflow diagram for loading, noise simulation, filtering, detrending, resampling, and normalization."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/mri-processing/06_raw_mri_slice_clean.png"),
+              alt: "Raw MRI slice",
+              contain: true,
+              caption:
+                "Raw T1-weighted MRI slice before synthetic noise injection."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/mri-processing/07_noisy_mri_slice_clean.png"),
+              alt: "Noisy MRI slice",
+              contain: true,
+              caption:
+                "MRI slice after synthetic 60 Hz scanner or powerline noise simulation."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/mri-processing/08_final_processed_slice_clean.png"),
+              alt: "Final processed MRI slice",
+              contain: true,
+              caption:
+                "Final processed MRI slice after filtering, detrending, median artifact reduction, and normalization."
             }
           ]
         },
