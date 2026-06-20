@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio_ammar/static/css/main.b257cf32.css",
-    "main.js": "/Portfolio_ammar/static/js/main.9227674d.js",
+    "main.css": "/Portfolio_ammar/static/css/main.e004dfa6.css",
+    "main.js": "/Portfolio_ammar/static/js/main.2b02285a.js",
     "static/css/64.386cb6fa.chunk.css": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css",
@@ -46,7 +46,7 @@
     "static/media/nust.png": "/Portfolio_ammar/static/media/nust.31a7b609f35048195b91.png",
     "static/media/solidworks.png": "/Portfolio_ammar/static/media/solidworks.7e7b543a2484b5e8b4e5.png",
     "static/media/sketch.svg": "/Portfolio_ammar/static/media/sketch.0e230675649abc1e3e3e09858a263df8.svg",
-    "static/media/cad_model.svg": "/Portfolio_ammar/static/media/cad_model.f63c0e7a038df3a807128e1314ce88b0.svg",
+    "static/media/cad_model.svg": "/Portfolio_ammar/static/media/cad_model.86e29d705e6cfd834ea4146a29c922b7.svg",
     "static/media/ansys.png": "/Portfolio_ammar/static/media/ansys.da5d81c06524e774f43d.png",
     "static/media/skill.svg": "/Portfolio_ammar/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "static/media/chatbot-automation.svg": "/Portfolio_ammar/static/media/chatbot-automation.12a9361ea2ad01f79f9a7ad96bd1da31.svg",
@@ -57,15 +57,15 @@
     "static/media/stock-dashboard.svg": "/Portfolio_ammar/static/media/stock-dashboard.670fd860540e06071909ad4ae07ae39f.svg",
     "static/media/electromechanical-systems.svg": "/Portfolio_ammar/static/media/electromechanical-systems.1cdab55af0816d2fdaae9123e88ec628.svg",
     "static/media/talksCardBack.svg": "/Portfolio_ammar/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.b257cf32.css.map": "/Portfolio_ammar/static/css/main.b257cf32.css.map",
-    "main.9227674d.js.map": "/Portfolio_ammar/static/js/main.9227674d.js.map",
+    "main.e004dfa6.css.map": "/Portfolio_ammar/static/css/main.e004dfa6.css.map",
+    "main.2b02285a.js.map": "/Portfolio_ammar/static/js/main.2b02285a.js.map",
     "64.386cb6fa.chunk.css.map": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css.map",
     "769.0db0762a.chunk.js.map": "/Portfolio_ammar/static/js/769.0db0762a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b257cf32.css",
-    "static/js/main.9227674d.js"
+    "static/css/main.e004dfa6.css",
+    "static/js/main.2b02285a.js"
   ]
 }

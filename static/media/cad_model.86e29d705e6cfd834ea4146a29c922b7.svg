@@ -30,7 +30,7 @@
       <stop offset="0%" stop-color="#505050"/>
       <stop offset="100%" stop-color="#202020"/>
     </linearGradient>
-    <linearGradient id="ballG" cx="40%" cy="35%" r="60%" fx="40%" fy="35%" gradientUnits="objectBoundingBox" id="ballG" x1="20%" y1="10%" x2="80%" y2="90%">
+    <linearGradient id="ballG" x1="20%" y1="10%" x2="80%" y2="90%">
       <stop offset="0%" stop-color="#E8E8E8"/>
       <stop offset="60%" stop-color="#C0C0C0"/>
       <stop offset="100%" stop-color="#888"/>
