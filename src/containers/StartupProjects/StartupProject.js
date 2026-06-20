@@ -245,6 +245,26 @@ export default function StartupProject() {
                   ))}
                 </div>
               ) : null}
+              {selectedProject.footerLink &&
+              selectedProject.footerLink.length ? (
+                <div className="project-link-list">
+                  {selectedProject.footerLink.map(link => (
+                    <a
+                      key={link.name}
+                      href={link.url}
+                      className="project-link"
+                      target={link.url.startsWith("http") ? "_blank" : "_self"}
+                      rel={
+                        link.url.startsWith("http")
+                          ? "noopener noreferrer"
+                          : undefined
+                      }
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </div>
+              ) : null}
               {selectedProject.gallery && selectedProject.gallery.length ? (
                 <div className="project-gallery">
                   {selectedProject.gallery.map(item => (

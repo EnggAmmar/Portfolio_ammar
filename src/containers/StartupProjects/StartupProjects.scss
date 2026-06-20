@@ -249,6 +249,37 @@
   color: #ffffff;
 }
 
+.project-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1rem 0 0;
+}
+
+.project-link {
+  border: 1px solid rgba(108, 99, 255, 0.35);
+  border-radius: 999px;
+  color: $buttonColor;
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0.35rem 0.85rem;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  background: rgba(108, 99, 255, 0.1);
+  text-decoration: none;
+}
+
+.dark-mode .project-link {
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
 .project-content {
   max-width: 960px;
   margin: 1.25rem auto 0;

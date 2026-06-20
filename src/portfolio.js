@@ -61,6 +61,9 @@ const skillsSection = {
     emoji("⚡Propulsion Engines & Reconfigurable Satellite Systems"),
     emoji(
       "⚡ UAV assembly and integration, system-level manufacturing and integration for UAVs"
+    ),
+    emoji(
+      "⚡ ANSYS Mechanical (FEA), scikit-learn, and Parametric Structural Analysis for simulation-driven ML workflows"
     )
   ],
 
@@ -582,17 +585,43 @@ const bigProjects = {
       projects: [
         {
           id: "fea-ml-beam-predictor",
-          projectName: "FEA Data ML Predictor for Beam Deformation",
+          projectName: "Cantilever Beam FEA + ML Predictor",
           projectDesc:
-            "Machine-learning workflow using ANSYS-derived cantilever beam data to predict deformation from parameterized inputs. The model uses Python, pandas, scikit-learn, train/test validation, Random Forest regression, R2/RMSE evaluation, and actual-versus-predicted plotting.",
-          tags: ["FEA data", "Machine learning", "Random Forest", "Python"],
+            "ANSYS FEA simulation of a cantilever beam across 18 parametric configurations (4536 nodes). Trained Random Forest and Linear Regression models to predict tip deformation from design parameters. Best model: Linear Regression R2=0.984, RMSE=0.00171 mm (LOO-CV). Key insight: when only 1 of 4 features varies, simpler models outperform ensembles.",
+          tags: [
+            "ANSYS Mechanical",
+            "FEA",
+            "scikit-learn",
+            "Random Forest",
+            "Linear Regression",
+            "Parametric Analysis"
+          ],
           media: [
+            {
+              type: "image",
+              src: require("./assets/images/projects/beam_fea_ml.png"),
+              alt: "Cantilever beam FEA and machine learning dashboard summary",
+              contain: true,
+              caption:
+                "Dashboard summary of FEA distributions, model comparison, feature analysis, and prediction performance."
+            },
             {
               type: "image",
               src: require("./assets/images/projects/generated/fea-ml-beam-predictor.svg"),
               alt: "FEA machine learning beam deformation predictor illustration",
+              contain: true,
               caption:
                 "Generated visual showing FEA beam data, deformation behavior, and actual-versus-predicted ML results."
+            }
+          ],
+          footerLink: [
+            {
+              name: "Project Page",
+              url: "/Portfolio_ammar/projects/beam-fea-ml/"
+            },
+            {
+              name: "GitHub",
+              url: "https://github.com/enggammar/cantilever-beam-fea-ml"
             }
           ]
         },
