@@ -1,5 +1,6 @@
 import React, {useContext, useEffect, useMemo, useState} from "react";
 import "./StartupProjects.scss";
+import "./ProjectFrameFix.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
@@ -58,6 +59,34 @@ export default function StartupProject() {
       : null;
   const getMediaSrc = media =>
     media && media.src && media.src.default ? media.src.default : media.src;
+
+  const renderMainImage = media => {
+    const mediaSrc = getMediaSrc(media);
+    const useSoftFrame = media.softFrame || media.contain;
+
+    return (
+      <div
+        className={
+          useSoftFrame
+            ? "project-media-frame project-media-frame-soft"
+            : "project-media-frame"
+        }
+        style={useSoftFrame ? {backgroundImage: `url(${mediaSrc})`} : undefined}
+      >
+        <img
+          src={mediaSrc}
+          alt={media.alt || `${selectedProject.projectName} selected`}
+          className={
+            media.contain
+              ? "project-media-main-image project-media-contain"
+              : "project-media-main-image"
+          }
+          loading="lazy"
+          decoding="async"
+        ></img>
+      </div>
+    );
+  };
 
   if (!bigProjects.display || !selectedDomain || !selectedProject) {
     return null;
@@ -168,20 +197,7 @@ export default function StartupProject() {
             {activeMedia ? (
               <div className="project-media-main">
                 {activeMedia.type === "image" ? (
-                  <img
-                    src={getMediaSrc(activeMedia)}
-                    alt={
-                      activeMedia.alt ||
-                      `${selectedProject.projectName} selected`
-                    }
-                    className={
-                      activeMedia.contain
-                        ? "project-media-main-image project-media-contain"
-                        : "project-media-main-image"
-                    }
-                    loading="lazy"
-                    decoding="async"
-                  ></img>
+                  renderMainImage(activeMedia)
                 ) : (
                   <video
                     className="project-video"
