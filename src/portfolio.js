@@ -530,10 +530,23 @@ const bigProjects = {
           media: [
             {
               type: "image",
-              src: require("./assets/images/projects/generated/exoskeleton-arm.svg"),
-              alt: "Exoskeleton arm mechanical design illustration",
+              src: require("./assets/images/projects/exoskeleton/realistic_render.svg"),
+              alt: "Realistic render of robotic exoskeleton arm",
               caption:
-                "Generated visual showing wearable arm linkages, joints, load paths, and actuator placement."
+                "Realistic visualization of the robotic exoskeleton arm concept for employer-facing portfolio presentation."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/exoskeleton/sketch.svg"),
+              alt: "Initial concept sketch of robotic exoskeleton arm",
+              caption: "Initial concept sketch of the robotic exoskeleton arm."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/exoskeleton/cad_model.svg"),
+              alt: "CAD model of robotic exoskeleton arm mechanism",
+              caption:
+                "CAD model showing the exoskeleton arm mechanism, linkages, and wearable support structure."
             }
           ]
         },
