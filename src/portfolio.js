@@ -297,7 +297,7 @@ const bigProjects = {
         },
         {
           id: "cubesat-platform",
-          projectName: "CubeSat Design Configurator & 3U Platform",
+          projectName: "CubeSat Design Configurator Platform",
           projectDesc:
             "A mission-driven CubeSat design configurator for early-phase architecture decisions across remote sensing, IoT/communication, and navigation missions. The tool uses a React frontend, FastAPI backend, subsystem databases, and CP-SAT optimization to select feasible platform, power, ADCS, onboard computer, communication, and thermal subsystem options with explainable solver traces.",
           tags: ["CubeSat", "MBSE", "CP-SAT", "React", "FastAPI", "Docker"],
