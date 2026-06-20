@@ -756,17 +756,72 @@ const bigProjects = {
         },
         {
           id: "chatbot-automation",
-          projectName: "Chatbots & Engineering Workflow Automation",
+          projectName:
+            "Engineering Error-Resolution Chatbot for MATLAB and Python Testing Workflows",
           projectDesc:
-            "Chatbot and automation-oriented project direction for structured technical workflows, documentation support, and engineering knowledge retrieval.",
-          tags: ["Chatbots", "Automation", "Knowledge workflows"],
+            "Designed a chatbot and automation-oriented workflow to support engineering test environments where recurring MATLAB and Python script errors need to be resolved quickly. The system connects a structured database of known errors, root causes, fixes, and verification notes with a chatbot interface for practical solution suggestions.",
+          projectDetails: [
+            "Built a chatbot interface concept for asking about technical script errors and testing context.",
+            "Structured an error-resolution knowledge base for MATLAB and Python workflows.",
+            "Defined retrieval logic for similar known issues, root causes, fixes, and verification checks.",
+            "Supported documentation of newly resolved errors so future teams can reuse solutions."
+          ],
+          tags: [
+            "Chatbots",
+            "Workflow automation",
+            "Knowledge retrieval",
+            "MATLAB",
+            "Python",
+            "Debugging support"
+          ],
           media: [
             {
               type: "image",
-              src: require("./assets/images/projects/generated/chatbot-automation.svg"),
-              alt: "Chatbot and engineering workflow automation illustration",
+              src: require("./assets/images/projects/chatbot-workflow/01_chatbot_automation_hero_v2.png"),
+              alt: "Engineering error-resolution chatbot portfolio hero",
+              contain: true,
               caption:
-                "Generated visual showing chatbot-driven knowledge workflows, documentation support, and structured automation."
+                "Portfolio hero for an engineering error-resolution chatbot supporting MATLAB and Python testing workflows."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/chatbot-workflow/02_system_architecture_v2.png"),
+              alt: "Chatbot system architecture diagram",
+              contain: true,
+              caption:
+                "System architecture connecting chatbot input, structured error database, retrieval logic, and solution output."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/chatbot-workflow/03_error_resolution_workflow_v2.png"),
+              alt: "Engineering error resolution workflow diagram",
+              contain: true,
+              caption:
+                "Error-resolution workflow from pasted error message to suggested fix and verification check."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/chatbot-workflow/04_knowledge_base_schema_v2.png"),
+              alt: "Chatbot knowledge base schema",
+              contain: true,
+              caption:
+                "Knowledge base schema for known errors, root causes, fixes, related scripts, and verification notes."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/chatbot-workflow/05_chatbot_ui_mockup_v2.png"),
+              alt: "Engineering chatbot UI mockup",
+              contain: true,
+              caption:
+                "Chatbot UI mockup for querying recurring MATLAB and Python testing errors."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/chatbot-workflow/06_case_study_summary_card_v2.png"),
+              alt: "Chatbot case study summary card",
+              contain: true,
+              caption:
+                "Case-study summary of the chatbot workflow, value proposition, and engineering support use case."
             }
           ]
         }
