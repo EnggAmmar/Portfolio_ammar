@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio_ammar/static/css/main.26dea060.css",
-    "main.js": "/Portfolio_ammar/static/js/main.dcd508b9.js",
+    "main.js": "/Portfolio_ammar/static/js/main.3ed040ee.js",
     "static/css/64.386cb6fa.chunk.css": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css",
@@ -38,11 +38,17 @@
     "static/media/rocket-pathlines.jpg": "/Portfolio_ammar/static/media/rocket-pathlines.160dd153817f1da3610b.jpg",
     "static/media/01_stock_price_trend.png": "/Portfolio_ammar/static/media/01_stock_price_trend.2926028dfe1d1b91fada.png",
     "static/media/thermal-heatsink-01.jpg": "/Portfolio_ammar/static/media/thermal-heatsink-01.42e50574bb2b306f917b.jpg",
+    "static/media/01_chatbot_automation_hero_v2.png": "/Portfolio_ammar/static/media/01_chatbot_automation_hero_v2.e9f8b350e20b24cb78d2.png",
     "static/media/printing-model-01.jpg": "/Portfolio_ammar/static/media/printing-model-01.272cb61bbbb90f5c87a9.jpg",
     "static/media/thermal-heatsink-02.jpg": "/Portfolio_ammar/static/media/thermal-heatsink-02.fa3ac8a4d116d0fde3cc.jpg",
     "static/media/Agustina.woff": "/Portfolio_ammar/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/06_case_study_summary_card_v2.png": "/Portfolio_ammar/static/media/06_case_study_summary_card_v2.fc4472627f53624ecdf2.png",
+    "static/media/04_knowledge_base_schema_v2.png": "/Portfolio_ammar/static/media/04_knowledge_base_schema_v2.b5fec4b930cd08d6f101.png",
     "static/media/thermal-conduction-45.jpg": "/Portfolio_ammar/static/media/thermal-conduction-45.44e19a3a3f09ea169343.jpg",
+    "static/media/03_error_resolution_workflow_v2.png": "/Portfolio_ammar/static/media/03_error_resolution_workflow_v2.2c8ec13e9393937ea63a.png",
+    "static/media/05_chatbot_ui_mockup_v2.png": "/Portfolio_ammar/static/media/05_chatbot_ui_mockup_v2.e1e5e2b07652d99ee2c3.png",
     "static/media/Ammar_Ahmed_Resume.pdf": "/Portfolio_ammar/static/media/Ammar_Ahmed_Resume.faba620de7eb0895a0da.pdf",
+    "static/media/02_system_architecture_v2.png": "/Portfolio_ammar/static/media/02_system_architecture_v2.bc64419e3b629e97e02b.png",
     "static/media/rocket-nozzle-printed.jpg": "/Portfolio_ammar/static/media/rocket-nozzle-printed.95826497dc46f68a68e3.jpg",
     "static/media/04_globalization_donut.png": "/Portfolio_ammar/static/media/04_globalization_donut.31ee0b234c7ad646ddbe.png",
     "static/media/05_technical_workflow_diagram.png": "/Portfolio_ammar/static/media/05_technical_workflow_diagram.c44664bb6194e36b254c.png",
@@ -66,13 +72,12 @@
     "static/media/cad_model.svg": "/Portfolio_ammar/static/media/cad_model.86e29d705e6cfd834ea4146a29c922b7.svg",
     "static/media/ansys.png": "/Portfolio_ammar/static/media/ansys.da5d81c06524e774f43d.png",
     "static/media/skill.svg": "/Portfolio_ammar/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
-    "static/media/chatbot-automation.svg": "/Portfolio_ammar/static/media/chatbot-automation.12a9361ea2ad01f79f9a7ad96bd1da31.svg",
     "index.html": "/Portfolio_ammar/index.html",
     "static/media/fea-ml-beam-predictor.svg": "/Portfolio_ammar/static/media/fea-ml-beam-predictor.4fb0a4a9148f007475a838f9be59a721.svg",
     "static/media/electromechanical-systems.svg": "/Portfolio_ammar/static/media/electromechanical-systems.1cdab55af0816d2fdaae9123e88ec628.svg",
     "static/media/talksCardBack.svg": "/Portfolio_ammar/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.26dea060.css.map": "/Portfolio_ammar/static/css/main.26dea060.css.map",
-    "main.dcd508b9.js.map": "/Portfolio_ammar/static/js/main.dcd508b9.js.map",
+    "main.3ed040ee.js.map": "/Portfolio_ammar/static/js/main.3ed040ee.js.map",
     "64.386cb6fa.chunk.css.map": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css.map",
@@ -80,6 +85,6 @@
   },
   "entrypoints": [
     "static/css/main.26dea060.css",
-    "static/js/main.dcd508b9.js"
+    "static/js/main.3ed040ee.js"
   ]
 }
