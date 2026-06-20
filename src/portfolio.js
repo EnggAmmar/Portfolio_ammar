@@ -634,10 +634,43 @@ const bigProjects = {
           media: [
             {
               type: "image",
-              src: require("./assets/images/projects/generated/stock-dashboard.svg"),
-              alt: "Interactive stock data dashboard illustration",
+              src: require("./assets/images/projects/investment-stock/05_dashboard_preview_mockup.png"),
+              alt: "Interactive stock data dashboard preview mockup",
+              contain: true,
               caption:
-                "Generated visual showing FastAPI, Plotly, pandas, line charts, and portfolio-style market analytics."
+                "Dashboard preview showing portfolio-style stock analytics and interactive market visualization layout."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/investment-stock/01_stock_price_trend.png"),
+              alt: "Stock price trend line chart",
+              contain: true,
+              caption:
+                "Stock price trend chart comparing selected companies over time."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/investment-stock/02_trading_volume.png"),
+              alt: "Stock trading volume chart",
+              contain: true,
+              caption:
+                "Trading volume visualization used for exploratory market analysis."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/investment-stock/03_ohlc_snapshot.png"),
+              alt: "OHLC stock data snapshot chart",
+              contain: true,
+              caption:
+                "OHLC snapshot summarizing open, high, low, and close values."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/investment-stock/04_globalization_donut.png"),
+              alt: "Globalization donut chart for stock dashboard",
+              contain: true,
+              caption:
+                "Donut chart component used in the dashboard analytics view."
             }
           ]
         },
