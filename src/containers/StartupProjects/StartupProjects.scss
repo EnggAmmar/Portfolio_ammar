@@ -379,6 +379,12 @@
   display: block;
 }
 
+.project-media-image.project-media-contain,
+.project-media-main-image.project-media-contain {
+  object-fit: contain;
+  padding: 14px;
+}
+
 .project-video-wrapper {
   width: 100%;
 }

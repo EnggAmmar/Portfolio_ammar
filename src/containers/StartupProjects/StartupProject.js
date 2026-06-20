@@ -174,7 +174,11 @@ export default function StartupProject() {
                       activeMedia.alt ||
                       `${selectedProject.projectName} selected`
                     }
-                    className="project-media-main-image"
+                    className={
+                      activeMedia.contain
+                        ? "project-media-main-image project-media-contain"
+                        : "project-media-main-image"
+                    }
                     loading="lazy"
                     decoding="async"
                   ></img>
@@ -282,7 +286,11 @@ export default function StartupProject() {
                                 mediaIndex + 1
                               }`
                             }
-                            className="project-media-image"
+                            className={
+                              media.contain
+                                ? "project-media-image project-media-contain"
+                                : "project-media-image"
+                            }
                             loading="lazy"
                             decoding="async"
                           ></img>
