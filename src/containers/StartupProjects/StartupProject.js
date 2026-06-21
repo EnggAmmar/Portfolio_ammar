@@ -1,8 +1,130 @@
 import React, {useContext, useEffect, useMemo, useState} from "react";
 import "./StartupProjects.scss";
+import "./ProjectFrameFix.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+
+const projectCopyOverrides = {
+  "uav-design": {
+    projectName: "Foldable Fixed-Wing UAV Design, 3D Printing & Field Testing",
+    projectShort:
+      "Designed and built a foldable fixed-wing UAV using CAD models, 3D-printed parts, electronics integration, CFD review, and field-test preparation.",
+    projectDesc:
+      "Designed and developed a foldable fixed-wing UAV prototype. The work included structural CAD modeling, wing and body layout, 3D-printed prototype parts, electronics packaging, and assembly checks before field testing.",
+    projectDetails: [
+      "Created CAD models for the UAV body, wing structure, internal mounting points, and assembly interfaces.",
+      "Prepared FDM 3D-printed parts and used physical fit checks to improve clearances and assembly quality.",
+      "Supported electronics and sensor integration so the airframe could be assembled as a complete test prototype.",
+      "Used CFD result views and field-test preparation to check the design before further prototype improvements."
+    ],
+    tags: ["Fixed-wing UAV", "CAD", "3D printing", "CFD", "Field testing"],
+    mediaCaptions: [
+      "CFD velocity view used to check airflow behavior around the UAV body and wing surfaces.",
+      "Mesh model prepared for aerodynamic simulation and design review.",
+      "3D-printed UAV body section used for fit checks before final assembly.",
+      "Assembled foldable fixed-wing UAV airframes prepared for prototype testing.",
+      "Wing structure reference showing the fabrication and assembly direction for the UAV."
+    ]
+  },
+  "launch-vehicle": {
+    projectName: "Conceptual Launch Vehicle & 25 kN LOX/RP-1 Rocket Engine Design",
+    projectShort:
+      "Worked on launch-vehicle subsystem concepts, propellant tanks, injector layout, piping, sensor placement, and rocket-engine cooling studies.",
+    projectDesc:
+      "Supported the conceptual design of a satellite launch vehicle and a 25 kN liquid rocket engine using LOX/RP-1 propellants. My work focused on CAD models, subsystem interfaces, tank concepts, injector-head layout, piping routes, sensor placement, and thermal analysis of the engine cooling system.",
+    projectDetails: [
+      "Created conceptual CAD models for the launch vehicle, propellant tanks, engine assembly, and mechanical interfaces.",
+      "Worked on tank baffle concepts to reduce propellant sloshing during operation.",
+      "Prepared injector-head and coaxial-swirl injector concepts inspired by heritage liquid rocket engine layouts.",
+      "Used ANSYS Workbench for tank stress checks and ANSYS Fluent for regenerative cooling and wall-temperature studies."
+    ],
+    tags: ["Launch vehicle", "25 kN engine", "LOX/RP-1", "ANSYS Fluent", "Thermal analysis"],
+    mediaCaptions: [
+      "Overall launch-vehicle concept render used for early system-level discussion.",
+      "25 kN liquid rocket engine concept assembly showing the main engine geometry.",
+      "Cut model used to explain the chamber, injector region, nozzle, and internal layout.",
+      "Flow pathline result used to study internal fluid behavior and thermal loading.",
+      "Thermal simulation view used to support regenerative cooling and wall-temperature assessment.",
+      "3D-printed nozzle prototype used for physical design review and geometry communication."
+    ]
+  },
+  "cubesat-platform": {
+    projectName: "CubeSat Mission Design Configurator with MBSE and CP-SAT Optimization",
+    projectShort:
+      "Built a web tool that turns CubeSat mission inputs into early subsystem choices for platform, power, ADCS, communication, and thermal design.",
+    projectDesc:
+      "Built a web-based CubeSat design configurator for early mission planning. The user enters mission needs such as mission type, payload class, region of interest, revisit time, and engineering preferences. The backend then converts these inputs into engineering requirements and selects a feasible CubeSat architecture.",
+    projectDetails: [
+      "Created the mission-input logic for Remote Sensing, IoT/Communication, and Navigation mission families.",
+      "Used subsystem databases to compare platform, power, ADCS, onboard computer, communication, and thermal options.",
+      "Used a CP-SAT optimization solver to select a feasible CubeSat bus and subsystem configuration.",
+      "Added solver-trace outputs so users can see selected components, constraints, margins, warnings, and reasoning."
+    ],
+    tags: ["CubeSat", "MBSE", "CP-SAT", "React", "FastAPI", "Docker"],
+    mediaCaptions: [
+      "Configurator concept showing how mission inputs are converted into architecture choices.",
+      "3U CubeSat platform visualization used to communicate the reconfigurable design direction."
+    ]
+  },
+  "robotic-control": {
+    projectName: "SCARA-Style RRP Robot Arm: CAD Layout & PID Control Simulation",
+    projectShort:
+      "Designed a SCARA-style robot arm and simulated PID control to study how the arm follows target position commands.",
+    projectDesc:
+      "Designed and simulated a SCARA-style RRP robot arm with two rotary joints and one vertical sliding joint. The project focused on the mechanical layout, joint movement, CAD visualization, and PID control simulation for target-position tracking.",
+    projectDetails: [
+      "Designed the RRP robot arm layout with two revolute joints and one prismatic joint.",
+      "Created CAD visuals to explain the mechanism, joint locations, and arm movement concept.",
+      "Built a PID simulation to compare target position with actual response.",
+      "Used response plots to check overshoot, settling behavior, and tracking performance."
+    ],
+    tags: ["SCARA robot", "RRP mechanism", "PID control", "Mechatronics", "CAD"],
+    mediaCaptions: [
+      "CAD visualization showing the SCARA-style robot arm mechanism and joint layout.",
+      "PID simulation result used to compare target motion and actual robot-arm response.",
+      "Initial sketch used to define the SCARA-style RRP mechanism concept."
+    ]
+  },
+  "exoskeleton-arm": {
+    projectName: "Robotic Exoskeleton Arm: Sketch, CAD Model & Motion-Support Concept",
+    projectShort:
+      "Designed an exoskeleton arm concept from sketch to CAD model, focusing on wearable support, joint placement, and actuator-ready interfaces.",
+    projectDesc:
+      "Designed a robotic exoskeleton arm concept to support upper-limb movement. The project started with a hand sketch, then moved into CAD modeling and final visual rendering. I designed the arm links, joint positions, wearable support frame, and actuator-ready mounting points.",
+    projectDetails: [
+      "Created the first concept sketch to define the arm layout and joint positions.",
+      "Built the CAD model of the exoskeleton arm mechanism and wearable support structure.",
+      "Designed linkages, joint interfaces, and actuator-ready mounting points.",
+      "Prepared a final render to show how the concept could look as a physical assistive device."
+    ],
+    tags: ["Exoskeleton", "Wearable robotics", "CAD", "Mechatronics", "Assistive device"],
+    mediaCaptions: [
+      "Final render showing the exoskeleton arm concept, wearable frame, and joint layout.",
+      "Initial sketch used to define the arm support shape and main joint positions.",
+      "CAD model showing the arm mechanism, support frame, linkages, and actuator-ready interfaces."
+    ]
+  }
+};
+
+const applyProjectCopyOverrides = project => {
+  const override = projectCopyOverrides[project.id];
+  if (!override) return project;
+
+  return {
+    ...project,
+    ...override,
+    media: project.media
+      ? project.media.map((media, index) => ({
+          ...media,
+          caption:
+            override.mediaCaptions && override.mediaCaptions[index]
+              ? override.mediaCaptions[index]
+              : media.caption
+        }))
+      : project.media
+  };
+};
 
 export default function StartupProject() {
   const {isDark} = useContext(StyleContext);
@@ -28,7 +150,9 @@ export default function StartupProject() {
     projectDomains[0];
   const domainProjects = useMemo(
     () =>
-      selectedDomain && selectedDomain.projects ? selectedDomain.projects : [],
+      selectedDomain && selectedDomain.projects
+        ? selectedDomain.projects.map(applyProjectCopyOverrides)
+        : [],
     [selectedDomain]
   );
   const [selectedProjectId, setSelectedProjectId] = useState(
@@ -58,6 +182,34 @@ export default function StartupProject() {
       : null;
   const getMediaSrc = media =>
     media && media.src && media.src.default ? media.src.default : media.src;
+
+  const renderMainImage = media => {
+    const mediaSrc = getMediaSrc(media);
+    const useSoftFrame = media.softFrame || media.contain;
+
+    return (
+      <div
+        className={
+          useSoftFrame
+            ? "project-media-frame project-media-frame-soft"
+            : "project-media-frame"
+        }
+        style={useSoftFrame ? {backgroundImage: `url(${mediaSrc})`} : undefined}
+      >
+        <img
+          src={mediaSrc}
+          alt={media.alt || `${selectedProject.projectName} selected`}
+          className={
+            media.contain
+              ? "project-media-main-image project-media-contain"
+              : "project-media-main-image"
+          }
+          loading="lazy"
+          decoding="async"
+        ></img>
+      </div>
+    );
+  };
 
   if (!bigProjects.display || !selectedDomain || !selectedProject) {
     return null;
@@ -142,7 +294,7 @@ export default function StartupProject() {
                     {project.projectName}
                   </span>
                   <span className="project-selector-desc">
-                    {project.projectDesc}
+                    {project.projectShort || project.projectDesc}
                   </span>
                   {project.tags && project.tags.length ? (
                     <span className="project-selector-tags">
@@ -168,20 +320,7 @@ export default function StartupProject() {
             {activeMedia ? (
               <div className="project-media-main">
                 {activeMedia.type === "image" ? (
-                  <img
-                    src={getMediaSrc(activeMedia)}
-                    alt={
-                      activeMedia.alt ||
-                      `${selectedProject.projectName} selected`
-                    }
-                    className={
-                      activeMedia.contain
-                        ? "project-media-main-image project-media-contain"
-                        : "project-media-main-image"
-                    }
-                    loading="lazy"
-                    decoding="async"
-                  ></img>
+                  renderMainImage(activeMedia)
                 ) : (
                   <video
                     className="project-video"
