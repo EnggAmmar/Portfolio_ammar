@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
+  <title id="title">CFD Aerodynamic Analysis of a Towing Vehicle Trailer System</title>
+  <desc id="desc">Portfolio visual for an ANSYS Fluent CFD study showing airflow, velocity contour, pressure contour, and force coefficient convergence for a towing vehicle and trailer.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061018"/>
+      <stop offset="0.55" stop-color="#091923"/>
+      <stop offset="1" stop-color="#0e2635"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b63ff"/>
+      <stop offset="0.25" stop-color="#00d4ff"/>
+      <stop offset="0.5" stop-color="#00e58a"/>
+      <stop offset="0.72" stop-color="#eaff00"/>
+      <stop offset="1" stop-color="#ff5b16"/>
+    </linearGradient>
+    <linearGradient id="veh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f475b"/>
+      <stop offset="1" stop-color="#0d1c2a"/>
+    </linearGradient>
+    <linearGradient id="pressure" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1040ff"/>
+      <stop offset="0.35" stop-color="#00d4ff"/>
+      <stop offset="0.55" stop-color="#28e66f"/>
+      <stop offset="0.76" stop-color="#ffe600"/>
+      <stop offset="1" stop-color="#ff4b00"/>
+    </linearGradient>
+    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <style>
+      .title{font-family:Inter,Arial,sans-serif;font-size:56px;font-weight:800;fill:#f4f8fb}
+      .accent{fill:#35f1f2}
+      .body{font-family:Inter,Arial,sans-serif;font-size:24px;fill:#c7d2dc;line-height:1.35}
+      .small{font-family:Inter,Arial,sans-serif;font-size:17px;fill:#dbe7ef}
+      .tiny{font-family:Inter,Arial,sans-serif;font-size:14px;fill:#aebbc7}
+      .panel-title{font-family:Inter,Arial,sans-serif;font-size:18px;font-weight:700;fill:#35f1f2;letter-spacing:.4px}
+      .chip{fill:#111d28;stroke:#415363;stroke-width:1.6}
+      .panel{fill:#0c1720;stroke:#2b404f;stroke-width:2}
+      .grid{stroke:#1f3341;stroke-width:1;opacity:.7}
+    </style>
+  </defs>
+
+  <rect width="1400" height="850" rx="30" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#77e8ff" stroke-width="1">
+    <path d="M40 90h1320M40 190h1320M40 290h1320M40 390h1320M40 490h1320M40 590h1320M40 690h1320"/>
+    <path d="M120 40v760M320 40v760M520 40v760M720 40v760M920 40v760M1120 40v760M1320 40v760"/>
+  </g>
+
+  <text x="50" y="76" class="title">CFD Aerodynamic Analysis</text>
+  <text x="50" y="132" class="title">of a <tspan class="accent">Towing Vehicle–Trailer System</tspan></text>
+  <rect x="52" y="162" width="118" height="7" rx="4" fill="#35f1f2"/>
+
+  <text x="50" y="218" class="body">ANSYS Fluent simulation of airflow, pressure distribution, and force coefficients</text>
+  <text x="50" y="252" class="body">for a towing vehicle and trailer setup. The study examined wake behavior,</text>
+  <text x="50" y="286" class="body">velocity fields, pressure loading, and convergence trends for design evaluation.</text>
+
+  <g transform="translate(50 326)">
+    <rect class="chip" x="0" y="0" width="158" height="58" rx="14"/>
+    <text x="22" y="36" class="small">Cd ≈ 0.215</text>
+    <rect class="chip" x="176" y="0" width="158" height="58" rx="14"/>
+    <text x="198" y="36" class="small">Cl ≈ 0.018</text>
+    <rect class="chip" x="352" y="0" width="176" height="58" rx="14"/>
+    <text x="374" y="35" class="small">~1600 iterations</text>
+    <rect class="chip" x="548" y="0" width="162" height="58" rx="14"/>
+    <text x="570" y="35" class="small">Vmax ≈ 35 m/s</text>
+  </g>
+
+  <g transform="translate(50 405)">
+    <rect x="0" y="0" width="74" height="38" rx="11" fill="#08292e" stroke="#17e7ef"/>
+    <circle cx="18" cy="19" r="5" fill="#17e7ef"/><text x="32" y="25" class="small">CFD</text>
+    <rect x="90" y="0" width="136" height="38" rx="11" fill="#0c261d" stroke="#54d99b"/>
+    <circle cx="108" cy="19" r="5" fill="#54d99b"/><text x="122" y="25" class="small">Aerodynamics</text>
+    <rect x="242" y="0" width="142" height="38" rx="11" fill="#0b2139" stroke="#2b94ff"/>
+    <circle cx="260" cy="19" r="5" fill="#2b94ff"/><text x="274" y="25" class="small">ANSYS Fluent</text>
+  </g>
+
+  <g filter="url(#glow)" opacity="0.95">
+    <path d="M572 160 C700 120 820 120 946 160 C1060 196 1190 180 1330 170" fill="none" stroke="#ffb800" stroke-width="2"/>
+    <path d="M540 196 C700 160 790 170 934 205 C1050 233 1200 220 1342 210" fill="none" stroke="#dfff00" stroke-width="2"/>
+    <path d="M512 235 C680 210 770 225 905 250 C1048 275 1190 267 1340 254" fill="none" stroke="#49e66a" stroke-width="2"/>
+    <path d="M500 274 C650 255 770 280 905 300 C1050 320 1198 312 1342 300" fill="none" stroke="#00d4ff" stroke-width="2"/>
+    <path d="M520 316 C680 330 765 348 895 356 C1048 365 1190 355 1345 348" fill="none" stroke="#008dff" stroke-width="2"/>
+    <path d="M540 352 C675 385 760 395 910 398 C1060 402 1198 396 1345 388" fill="none" stroke="#08f6f2" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="730" y="238" width="310" height="178" rx="20" fill="url(#veh)" stroke="#5e8fb4" stroke-width="3"/>
+    <rect x="765" y="287" width="180" height="45" fill="#0b1d2c" stroke="#34556e"/>
+    <rect x="965" y="275" width="30" height="110" fill="#0b1d2c" stroke="#34556e"/>
+    <circle cx="818" cy="424" r="30" fill="#0b1520" stroke="#59748a" stroke-width="6"/>
+    <circle cx="874" cy="424" r="30" fill="#0b1520" stroke="#59748a" stroke-width="6"/>
+    <path d="M1040 350 L1100 350 L1118 378 L1092 394 L1036 392 Z" fill="#14293a" stroke="#526f82" stroke-width="3"/>
+    <path d="M1110 332 L1300 340 L1345 380 L1320 430 L1130 430 L1085 392 Z" fill="url(#veh)" stroke="#5e8fb4" stroke-width="3"/>
+    <path d="M1178 350 L1256 355 L1282 382 L1164 380 Z" fill="#07111b" stroke="#577991" stroke-width="2"/>
+    <circle cx="1160" cy="435" r="35" fill="#0b1520" stroke="#59748a" stroke-width="6"/>
+    <circle cx="1300" cy="435" r="35" fill="#0b1520" stroke="#59748a" stroke-width="6"/>
+  </g>
+
+  <g transform="translate(48 500)">
+    <g>
+      <rect class="panel" x="0" y="0" width="312" height="292" rx="18"/>
+      <text x="24" y="34" class="panel-title">AIRFLOW VECTOR FIELD</text>
+      <rect x="24" y="54" width="264" height="130" fill="#08131b"/>
+      <g stroke-width="2" opacity=".95">
+        <path d="M30 75 C90 70 120 80 160 80 S230 75 285 70" stroke="#dfff00" fill="none"/>
+        <path d="M30 98 C94 92 125 102 170 105 S230 100 285 96" stroke="#54e86b" fill="none"/>
+        <path d="M30 122 C92 116 130 132 175 136 S235 132 285 126" stroke="#00d4ff" fill="none"/>
+        <path d="M30 150 C88 152 120 165 175 162 S235 154 285 150" stroke="#0b63ff" fill="none"/>
+      </g>
+      <rect x="70" y="115" width="86" height="45" rx="8" fill="#12293b" stroke="#476982"/>
+      <path d="M162 135 L215 136 L235 154 L225 168 L170 166 Z" fill="#12293b" stroke="#476982"/>
+      <rect x="36" y="218" width="238" height="12" fill="url(#flow)"/>
+      <text x="36" y="252" class="tiny">0</text><text x="142" y="252" class="tiny">17.5</text><text x="246" y="252" class="tiny">35 m/s</text>
+    </g>
+    <g transform="translate(336 0)">
+      <rect class="panel" x="0" y="0" width="312" height="292" rx="18"/>
+      <text x="24" y="34" class="panel-title">VELOCITY CONTOUR</text>
+      <rect x="24" y="54" width="264" height="130" fill="#001d4a"/>
+      <path d="M24 54 H288 V100 C225 78 178 76 130 92 C85 108 56 110 24 98 Z" fill="#fff200" opacity=".9"/>
+      <path d="M24 104 C72 130 120 115 170 128 C215 140 252 132 288 124 V184 H24 Z" fill="#18e070" opacity=".9"/>
+      <path d="M24 132 C70 155 110 150 150 163 C190 176 230 166 288 150 V184 H24 Z" fill="#00c8ff" opacity=".8"/>
+      <rect x="74" y="124" width="90" height="42" rx="8" fill="#12293b" stroke="#476982"/>
+      <path d="M168 140 L230 140 L250 160 L240 174 L178 174 Z" fill="#12293b" stroke="#476982"/>
+      <rect x="36" y="218" width="238" height="12" fill="url(#flow)"/>
+      <text x="36" y="252" class="tiny">0</text><text x="142" y="252" class="tiny">17.5</text><text x="246" y="252" class="tiny">35 m/s</text>
+    </g>
+    <g transform="translate(672 0)">
+      <rect class="panel" x="0" y="0" width="312" height="292" rx="18"/>
+      <text x="24" y="34" class="panel-title">SURFACE PRESSURE (Pa)</text>
+      <polygon points="54,142 92,98 232,116 258,164 108,184" fill="url(#pressure)" stroke="#6fa4bc" stroke-width="2"/>
+      <rect x="76" y="112" width="126" height="64" fill="none" stroke="#19364b" stroke-width="2"/>
+      <circle cx="112" cy="194" r="20" fill="#12c95f" stroke="#0a381f"/>
+      <circle cx="226" cy="194" r="20" fill="#ffb800" stroke="#533a00"/>
+      <rect x="36" y="218" width="238" height="12" fill="url(#pressure)"/>
+      <text x="32" y="252" class="tiny">-1.2e5</text><text x="142" y="252" class="tiny">0</text><text x="235" y="252" class="tiny">1.2e5</text>
+    </g>
+    <g transform="translate(1008 0)">
+      <rect class="panel" x="0" y="0" width="312" height="292" rx="18"/>
+      <text x="24" y="34" class="panel-title">FORCE COEFFICIENTS</text>
+      <g transform="translate(42 58)">
+        <line x1="0" y1="180" x2="226" y2="180" class="grid"/><line x1="0" y1="135" x2="226" y2="135" class="grid"/><line x1="0" y1="90" x2="226" y2="90" class="grid"/><line x1="0" y1="45" x2="226" y2="45" class="grid"/><line x1="0" y1="0" x2="226" y2="0" class="grid"/>
+        <line x1="0" y1="0" x2="0" y2="180" stroke="#4e6372"/><line x1="0" y1="180" x2="226" y2="180" stroke="#4e6372"/>
+        <path d="M0 172 L4 8 L12 105 L28 92 L58 100 L100 96 L150 98 L226 97" fill="none" stroke="#20f7f2" stroke-width="3"/>
+        <path d="M0 178 L5 62 L15 118 L45 132 L85 128 L140 126 L226 126" fill="none" stroke="#5ee66f" stroke-width="3"/>
+        <path d="M0 160 L5 28 L18 145 L45 138 L90 136 L150 135 L226 134" fill="none" stroke="#ffd42a" stroke-width="3"/>
+      </g>
+      <text x="62" y="268" class="tiny">0</text><text x="154" y="268" class="tiny">800</text><text x="242" y="268" class="tiny">1600</text>
+    </g>
+  </g>
+</svg>
