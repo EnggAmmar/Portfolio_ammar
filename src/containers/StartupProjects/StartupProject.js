@@ -216,100 +216,108 @@ export default function StartupProject() {
   }
 
   return (
-    <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="projects">
-        <div>
-          <h1 className="skills-heading">{bigProjects.title}</h1>
-          <p
-            className={
-              isDark
-                ? "dark-mode project-subtitle"
-                : "subTitle project-subtitle"
-            }
-          >
-            {bigProjects.subtitle}
-          </p>
-
-          <div
-            className="project-domain-tabs"
-            role="tablist"
-            aria-label="Project domains"
-          >
-            {projectDomains.map(domain => {
-              const isActive = domain.id === selectedDomainId;
-              return (
-                <button
-                  key={domain.id}
-                  type="button"
-                  className={
-                    isActive
-                      ? `project-domain-tab project-domain-tab-active${
-                          isDark ? " dark-mode" : ""
-                        }`
-                      : `project-domain-tab${isDark ? " dark-mode" : ""}`
-                  }
-                  onClick={() => setSelectedDomainId(domain.id)}
-                  aria-selected={isActive}
-                  role="tab"
-                >
-                  {domain.name}
-                </button>
-              );
-            })}
-          </div>
-
-          <div className="project-domain-header">
-            <div>
-              <p className="project-domain-label">Selected domain</p>
-              <h2 className="project-domain-title">{selectedDomain.name}</h2>
-            </div>
+    <div className="main" id="projects">
+      <div>
+        <Fade left duration={1000}>
+          <div className="project-navigation-panel">
+            <h1 className="skills-heading">{bigProjects.title}</h1>
             <p
               className={
                 isDark
-                  ? "dark-mode project-domain-summary"
-                  : "project-domain-summary"
+                  ? "dark-mode project-subtitle"
+                  : "subTitle project-subtitle"
               }
             >
-              {selectedDomain.summary}
+              {bigProjects.subtitle}
             </p>
-          </div>
 
-          <div className="project-selector-grid">
-            {domainProjects.map(project => {
-              const isActive = project.id === selectedProjectId;
-              return (
-                <button
-                  key={project.id}
-                  type="button"
-                  className={
-                    isActive
-                      ? `project-selector-card project-selector-card-active${
-                          isDark ? " dark-mode" : ""
-                        }`
-                      : `project-selector-card${isDark ? " dark-mode" : ""}`
-                  }
-                  onClick={() => setSelectedProjectId(project.id)}
-                >
-                  <span className="project-selector-title">
-                    {project.projectName}
-                  </span>
-                  <span className="project-selector-desc">
-                    {project.projectShort || project.projectDesc}
-                  </span>
-                  {project.tags && project.tags.length ? (
-                    <span className="project-selector-tags">
-                      {project.tags.slice(0, 3).map(tag => (
-                        <span className="project-tag" key={tag}>
-                          {tag}
-                        </span>
-                      ))}
+            <div
+              className="project-domain-tabs"
+              role="tablist"
+              aria-label="Project domains"
+            >
+              {projectDomains.map(domain => {
+                const isActive = domain.id === selectedDomainId;
+                return (
+                  <button
+                    key={domain.id}
+                    type="button"
+                    className={
+                      isActive
+                        ? `project-domain-tab project-domain-tab-active${
+                            isDark ? " dark-mode" : ""
+                          }`
+                        : `project-domain-tab${isDark ? " dark-mode" : ""}`
+                    }
+                    onClick={() => setSelectedDomainId(domain.id)}
+                    aria-selected={isActive}
+                    role="tab"
+                  >
+                    {domain.name}
+                  </button>
+                );
+              })}
+            </div>
+
+            <div className="project-domain-header">
+              <div>
+                <p className="project-domain-label">Selected domain</p>
+                <h2 className="project-domain-title">{selectedDomain.name}</h2>
+              </div>
+              <p
+                className={
+                  isDark
+                    ? "dark-mode project-domain-summary"
+                    : "project-domain-summary"
+                }
+              >
+                {selectedDomain.summary}
+              </p>
+            </div>
+
+            <div className="project-selector-grid">
+              {domainProjects.map(project => {
+                const isActive = project.id === selectedProjectId;
+                return (
+                  <button
+                    key={project.id}
+                    type="button"
+                    className={
+                      isActive
+                        ? `project-selector-card project-selector-card-active${
+                            isDark ? " dark-mode" : ""
+                          }`
+                        : `project-selector-card${isDark ? " dark-mode" : ""}`
+                    }
+                    onClick={() => setSelectedProjectId(project.id)}
+                  >
+                    <span className="project-selector-title">
+                      {project.projectName}
                     </span>
-                  ) : null}
-                </button>
-              );
-            })}
+                    <span className="project-selector-desc">
+                      {project.projectShort || project.projectDesc}
+                    </span>
+                    {project.tags && project.tags.length ? (
+                      <span className="project-selector-tags">
+                        {project.tags.slice(0, 3).map(tag => (
+                          <span className="project-tag" key={tag}>
+                            {tag}
+                          </span>
+                        ))}
+                      </span>
+                    ) : null}
+                  </button>
+                );
+              })}
+            </div>
           </div>
+        </Fade>
 
+        <Fade
+          right
+          duration={1000}
+          key={`${selectedDomainId}-${selectedProjectId}`}
+        >
           <div
             className={
               isDark
@@ -465,8 +473,8 @@ export default function StartupProject() {
               </div>
             ) : null}
           </div>
-        </div>
+        </Fade>
       </div>
-    </Fade>
+    </div>
   );
 }
