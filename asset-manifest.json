@@ -1,12 +1,16 @@
 {
   "files": {
     "main.css": "/Portfolio_ammar/static/css/main.bc1f3069.css",
-    "main.js": "/Portfolio_ammar/static/js/main.51e4d917.js",
+    "main.js": "/Portfolio_ammar/static/js/main.624aae3b.js",
     "static/css/64.386cb6fa.chunk.css": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.0db0762a.chunk.js": "/Portfolio_ammar/static/js/769.0db0762a.chunk.js",
     "static/media/UAV Drone Simulation.mp4": "/Portfolio_ammar/static/media/UAV Drone Simulation.2687b050309a54200f96.mp4",
+    "static/media/towing-trailer-cfd-overview.png": "/Portfolio_ammar/static/media/towing-trailer-cfd-overview.61f9df3a4a3cfa9c12a8.png",
+    "static/media/towing-trailer-cfd-workflow.png": "/Portfolio_ammar/static/media/towing-trailer-cfd-workflow.0862f7ec55bc78d0498c.png",
+    "static/media/towing-trailer-flow-insights.png": "/Portfolio_ammar/static/media/towing-trailer-flow-insights.b610de9811a05a087101.png",
+    "static/media/towing-trailer-results.png": "/Portfolio_ammar/static/media/towing-trailer-results.2403764652654989c240.png",
     "static/media/3d_print_1.mp4": "/Portfolio_ammar/static/media/3d_print_1.fb2c01faf226c0517d95.mp4",
     "static/media/02_processing_step_montage.png": "/Portfolio_ammar/static/media/02_processing_step_montage.09cd53e3a854bc3b3e02.png",
     "static/media/03_frequency_domain_analysis.png": "/Portfolio_ammar/static/media/03_frequency_domain_analysis.7e33d0cbfbf72bb36a21.png",
@@ -70,14 +74,13 @@
     "static/media/solidworks.png": "/Portfolio_ammar/static/media/solidworks.7e7b543a2484b5e8b4e5.png",
     "static/media/sketch.svg": "/Portfolio_ammar/static/media/sketch.0e230675649abc1e3e3e09858a263df8.svg",
     "static/media/cad_model.svg": "/Portfolio_ammar/static/media/cad_model.86e29d705e6cfd834ea4146a29c922b7.svg",
-    "static/media/electromechanical-systems.svg": "/Portfolio_ammar/static/media/electromechanical-systems.00974b5c3eb70286c56706be8f3bc986.svg",
     "static/media/ansys.png": "/Portfolio_ammar/static/media/ansys.da5d81c06524e774f43d.png",
     "static/media/skill.svg": "/Portfolio_ammar/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/Portfolio_ammar/index.html",
     "static/media/fea-ml-beam-predictor.svg": "/Portfolio_ammar/static/media/fea-ml-beam-predictor.4fb0a4a9148f007475a838f9be59a721.svg",
     "static/media/talksCardBack.svg": "/Portfolio_ammar/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.bc1f3069.css.map": "/Portfolio_ammar/static/css/main.bc1f3069.css.map",
-    "main.51e4d917.js.map": "/Portfolio_ammar/static/js/main.51e4d917.js.map",
+    "main.624aae3b.js.map": "/Portfolio_ammar/static/js/main.624aae3b.js.map",
     "64.386cb6fa.chunk.css.map": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css.map",
@@ -85,6 +88,6 @@
   },
   "entrypoints": [
     "static/css/main.bc1f3069.css",
-    "static/js/main.51e4d917.js"
+    "static/js/main.624aae3b.js"
   ]
 }
