@@ -368,18 +368,44 @@ const bigProjects = {
           ]
         },
         {
-          id: "electromechanical-systems",
-          projectName: "Electromechanical System Development",
+          id: "towing-vehicle-trailer-cfd",
+          projectName:
+            "CFD Aerodynamic Analysis of a Towing Vehicle–Trailer System",
           projectDesc:
-            "System-level mechanical development involving packaged assemblies, component positioning, actuator and sensor accommodation, and design coordination across mechanical and electrical interfaces.",
-          tags: ["Electromechanical", "Packaging", "Actuators", "Sensors"],
+            "ANSYS Fluent simulation of airflow, pressure distribution, and force coefficients for a towing vehicle and trailer setup. The study examined wake behavior, velocity fields, pressure loading, and convergence trends to evaluate aerodynamic performance and support design decisions.",
+          tags: ["CFD", "Aerodynamics", "ANSYS Fluent"],
           media: [
             {
               type: "image",
-              src: require("./assets/images/projects/generated/electromechanical-systems.svg"),
-              alt: "Electromechanical system development illustration",
+              src: require("./assets/images/projects/database-upgrade/towing-trailer-cfd-overview.png"),
+              alt:
+                "CFD aerodynamic analysis overview for a towing vehicle and trailer system",
               caption:
-                "Generated visual showing electromechanical packaging, actuator, sensor, PCB, and harness integration."
+                "Aerodynamic analysis overview with airflow, velocity, pressure, and force-coefficient results."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/towing-trailer-flow-insights.png"),
+              alt:
+                "Aerodynamic flow insights around a towing vehicle and trailer",
+              caption:
+                "Flow-field insights highlighting wake recirculation, roofline acceleration, hitch-gap flow, and frontal pressure buildup."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/towing-trailer-cfd-workflow.png"),
+              alt:
+                "ANSYS Fluent simulation workflow for the towing vehicle and trailer study",
+              caption:
+                "CFD workflow from geometry preparation and meshing through solver setup, convergence monitoring, and post-processing."
+            },
+            {
+              type: "image",
+              src: require("./assets/images/projects/database-upgrade/towing-trailer-results.png"),
+              alt:
+                "CFD results and aerodynamic performance summary for the towing vehicle and trailer",
+              caption:
+                "Results summary covering force coefficients, maximum velocity, convergence, pressure distribution, and design takeaways."
             }
           ]
         },
