@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio_ammar/static/css/main.bc1f3069.css",
-    "main.js": "/Portfolio_ammar/static/js/main.624aae3b.js",
+    "main.js": "/Portfolio_ammar/static/js/main.e657a292.js",
     "static/css/64.386cb6fa.chunk.css": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css",
@@ -80,7 +80,7 @@
     "static/media/fea-ml-beam-predictor.svg": "/Portfolio_ammar/static/media/fea-ml-beam-predictor.4fb0a4a9148f007475a838f9be59a721.svg",
     "static/media/talksCardBack.svg": "/Portfolio_ammar/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.bc1f3069.css.map": "/Portfolio_ammar/static/css/main.bc1f3069.css.map",
-    "main.624aae3b.js.map": "/Portfolio_ammar/static/js/main.624aae3b.js.map",
+    "main.e657a292.js.map": "/Portfolio_ammar/static/js/main.e657a292.js.map",
     "64.386cb6fa.chunk.css.map": "/Portfolio_ammar/static/css/64.386cb6fa.chunk.css.map",
     "64.56dc6704.chunk.js.map": "/Portfolio_ammar/static/js/64.56dc6704.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/Portfolio_ammar/static/css/769.b3cbb36b.chunk.css.map",
@@ -88,6 +88,6 @@
   },
   "entrypoints": [
     "static/css/main.bc1f3069.css",
-    "static/js/main.624aae3b.js"
+    "static/js/main.e657a292.js"
   ]
 }
