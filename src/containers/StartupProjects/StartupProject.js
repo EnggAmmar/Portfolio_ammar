@@ -28,7 +28,8 @@ const projectCopyOverrides = {
     ]
   },
   "launch-vehicle": {
-    projectName: "Conceptual Launch Vehicle & 25 kN LOX/RP-1 Rocket Engine Design",
+    projectName:
+      "Conceptual Launch Vehicle & 25 kN LOX/RP-1 Rocket Engine Design",
     projectShort:
       "Worked on launch-vehicle subsystem concepts, propellant tanks, injector layout, piping, sensor placement, and rocket-engine cooling studies.",
     projectDesc:
@@ -39,7 +40,13 @@ const projectCopyOverrides = {
       "Prepared injector-head and coaxial-swirl injector concepts inspired by heritage liquid rocket engine layouts.",
       "Used ANSYS Workbench for tank stress checks and ANSYS Fluent for regenerative cooling and wall-temperature studies."
     ],
-    tags: ["Launch vehicle", "25 kN engine", "LOX/RP-1", "ANSYS Fluent", "Thermal analysis"],
+    tags: [
+      "Launch vehicle",
+      "25 kN engine",
+      "LOX/RP-1",
+      "ANSYS Fluent",
+      "Thermal analysis"
+    ],
     mediaCaptions: [
       "Overall launch-vehicle concept render used for early system-level discussion.",
       "25 kN liquid rocket engine concept assembly showing the main engine geometry.",
@@ -50,7 +57,8 @@ const projectCopyOverrides = {
     ]
   },
   "cubesat-platform": {
-    projectName: "CubeSat Mission Design Configurator with MBSE and CP-SAT Optimization",
+    projectName:
+      "CubeSat Mission Design Configurator with MBSE and CP-SAT Optimization",
     projectShort:
       "Built a web tool that turns CubeSat mission inputs into early subsystem choices for platform, power, ADCS, communication, and thermal design.",
     projectDesc:
@@ -68,7 +76,8 @@ const projectCopyOverrides = {
     ]
   },
   "robotic-control": {
-    projectName: "SCARA-Style RRP Robot Arm: CAD Layout & PID Control Simulation",
+    projectName:
+      "SCARA-Style RRP Robot Arm: CAD Layout & PID Control Simulation",
     projectShort:
       "Designed a SCARA-style robot arm and simulated PID control to study how the arm follows target position commands.",
     projectDesc:
@@ -79,7 +88,13 @@ const projectCopyOverrides = {
       "Built a PID simulation to compare target position with actual response.",
       "Used response plots to check overshoot, settling behavior, and tracking performance."
     ],
-    tags: ["SCARA robot", "RRP mechanism", "PID control", "Mechatronics", "CAD"],
+    tags: [
+      "SCARA robot",
+      "RRP mechanism",
+      "PID control",
+      "Mechatronics",
+      "CAD"
+    ],
     mediaCaptions: [
       "CAD visualization showing the SCARA-style robot arm mechanism and joint layout.",
       "PID simulation result used to compare target motion and actual robot-arm response.",
@@ -87,7 +102,8 @@ const projectCopyOverrides = {
     ]
   },
   "exoskeleton-arm": {
-    projectName: "Robotic Exoskeleton Arm: Sketch, CAD Model & Motion-Support Concept",
+    projectName:
+      "Robotic Exoskeleton Arm: Sketch, CAD Model & Motion-Support Concept",
     projectShort:
       "Designed an exoskeleton arm concept from sketch to CAD model, focusing on wearable support, joint placement, and actuator-ready interfaces.",
     projectDesc:
@@ -98,7 +114,13 @@ const projectCopyOverrides = {
       "Designed linkages, joint interfaces, and actuator-ready mounting points.",
       "Prepared a final render to show how the concept could look as a physical assistive device."
     ],
-    tags: ["Exoskeleton", "Wearable robotics", "CAD", "Mechatronics", "Assistive device"],
+    tags: [
+      "Exoskeleton",
+      "Wearable robotics",
+      "CAD",
+      "Mechatronics",
+      "Assistive device"
+    ],
     mediaCaptions: [
       "Final render showing the exoskeleton arm concept, wearable frame, and joint layout.",
       "Initial sketch used to define the arm support shape and main joint positions.",

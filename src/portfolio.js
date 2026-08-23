@@ -378,32 +378,28 @@ const bigProjects = {
             {
               type: "image",
               src: require("./assets/images/projects/database-upgrade/towing-trailer-cfd-overview.png"),
-              alt:
-                "CFD aerodynamic analysis overview for a towing vehicle and trailer system",
+              alt: "CFD aerodynamic analysis overview for a towing vehicle and trailer system",
               caption:
                 "Aerodynamic analysis overview with airflow, velocity, pressure, and force-coefficient results."
             },
             {
               type: "image",
               src: require("./assets/images/projects/database-upgrade/towing-trailer-flow-insights.png"),
-              alt:
-                "Aerodynamic flow insights around a towing vehicle and trailer",
+              alt: "Aerodynamic flow insights around a towing vehicle and trailer",
               caption:
                 "Flow-field insights highlighting wake recirculation, roofline acceleration, hitch-gap flow, and frontal pressure buildup."
             },
             {
               type: "image",
               src: require("./assets/images/projects/database-upgrade/towing-trailer-cfd-workflow.png"),
-              alt:
-                "ANSYS Fluent simulation workflow for the towing vehicle and trailer study",
+              alt: "ANSYS Fluent simulation workflow for the towing vehicle and trailer study",
               caption:
                 "CFD workflow from geometry preparation and meshing through solver setup, convergence monitoring, and post-processing."
             },
             {
               type: "image",
               src: require("./assets/images/projects/database-upgrade/towing-trailer-results.png"),
-              alt:
-                "CFD results and aerodynamic performance summary for the towing vehicle and trailer",
+              alt: "CFD results and aerodynamic performance summary for the towing vehicle and trailer",
               caption:
                 "Results summary covering force coefficients, maximum velocity, convergence, pressure distribution, and design takeaways."
             }
